@@ -7,13 +7,16 @@ import { HomeComponent } from './home/home.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HomeGreetingComponent } from './home-greeting/home-greeting.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    HomeGreetingComponent
+    HomeGreetingComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

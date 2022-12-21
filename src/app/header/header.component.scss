@@ -1,19 +1,25 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 110px;
-  border: 1px solid white;
+  // border: 1px solid white;
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #141d2f;
+  z-index: 10000;
 }
 
 #logo {
   font-size: 36px;
   font-weight: 700;
+}
+
+#logo-s {
+  // color: #00BEE8;
 }
 
 .nav {
@@ -25,6 +31,7 @@
     font-weight: 300;
     text-decoration: none;
     color: #fff;
+    transition: 0.2s;
 
     &:hover {
       color: #00BEE8;
