@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+img {
+  width: 500px;
+  padding-right: 100px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 500px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700px;
+  color: #4B47FF;
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: 400;
+  color: #00BEE8;
+}
+
+.links {
+  display: flex;
+  gap: 80px;
+  margin-top: 20px;
+
+  a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 12px 32px;
+  }
+
+  .live-test {
+    background-color: #4B47FF;
+    border-radius: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #00BEE8;
+      transition: 0.2s;
+    }
+  }
+
+  .github {
+    border: 1px solid #00BEE8;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #00BEE8;
+      transition: 0.2s;
+    }
+  }
+
+}

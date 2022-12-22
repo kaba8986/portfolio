@@ -10,6 +10,8 @@ import { HomeGreetingComponent } from './home-greeting/home-greeting.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectComponent } from './project/project.component';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeGreetingComponent,
     AboutComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

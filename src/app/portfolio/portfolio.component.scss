@@ -1,18 +1,21 @@
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   width: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 .portfolio-text {
-
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .portfolio-title {
+  width: 100%;
   position: relative;
 }
 
@@ -26,9 +29,12 @@ h1 {
   height: 4px;
   background-color: #4B47FF;
   z-index: -300;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 0px;
+  top: 10%;
   width: 75vw;
+}
+
+.project-container {
+  padding-top: 120px;
 }
 
