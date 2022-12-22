@@ -8,6 +8,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HomeGreetingComponent } from './home-greeting/home-greeting.component';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     HeaderComponent,
     HomeGreetingComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
