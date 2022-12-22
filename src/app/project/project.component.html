@@ -1,12 +1,12 @@
-<div class="container">
-  <img src="../../assets/img/projects/Join.png" alt="">
-  <div class="description">
-    <h3>Join</h3>
+<div class="container" [class.flex-reverse]="reverse">
+  <img [class.img-reverse]="reverse" src="../../assets/img/projects/{{ currProject.image }}" alt="">
+  <div class="description" [class.desc-reverse]="reverse">
+    <h3>{{ currProject.title }}</h3>
     <h4>Angular | Typescript | HTML | CSS | Firebase</h4>
     <p>Task manager inspired by the anban Sstem. Create and organize tasks using drag and drop functions, assign users and categories.</p>
-    <div class="links">
-      <a class="live-test" href="#">Live test</a>
-      <a class="github" href="#">Github</a>
+    <div class="links" [class.links-reverse]="reverse">
+      <a class="live-test" target="blank"  href="{{ currProject.live }}">Live test</a>
+      <a class="github" target="blank" href="{{ currProject.github }}">Github</a>
     </div>
   </div>
 </div>

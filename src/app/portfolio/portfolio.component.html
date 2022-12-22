@@ -7,6 +7,6 @@
     <div class="line"></div>
   </div>
   <div class="project-container">
-    <ab-project></ab-project>
+    <ab-project *ngFor="let project of projects; let i = index;" [reverse]="i%2 == 1" [currProject]="project"></ab-project>
   </div>
 </div>

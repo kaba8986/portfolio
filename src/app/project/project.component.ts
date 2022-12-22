@@ -1,15 +1,6 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import  ProjectsJson  from '../../assets/projects.json';
-
-
-
-interface PROJECT {
-  title: string;
-  languages: string;
-  description: string;
-  live: string;
-  github: string;
-}
+import { Project } from 'src/models/project.class';
 
 @Component({
   selector: 'ab-project',
@@ -18,11 +9,12 @@ interface PROJECT {
 })
 export class ProjectComponent implements OnInit {
 
-  Projects: PROJECT[] = ProjectsJson;
+  @Input() reverse: boolean = false; //get boolean from portfolio component
+  @Input() currProject = new Project(); //get current Project from portfolio component
 
   constructor() {
-    console.log(this.Projects);
    }
+
 
   ngOnInit(): void {
   }

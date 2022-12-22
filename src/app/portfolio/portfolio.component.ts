@@ -1,4 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import  ProjectsJson  from '../../assets/projects.json';
+
+interface PROJECT {
+  title: string;
+  languages: string;
+  description: string;
+  live: string;
+  github: string;
+  image: string;
+}
 
 @Component({
   selector: 'ab-portfolio',
@@ -7,7 +17,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  projects: PROJECT[] = ProjectsJson;
+
+  constructor() {
+    console.log(this.projects);
+   }
 
   ngOnInit(): void {
   }
