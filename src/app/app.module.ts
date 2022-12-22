@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectComponent } from './project/project.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -23,7 +24,8 @@ import { ProjectComponent } from './project/project.component';
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
-    ProjectComponent
+    ProjectComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
