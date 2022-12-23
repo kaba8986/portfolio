@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
+import { ScrollToDirective } from './directives/scroll-to.directive';
+
 
 
 
@@ -31,7 +33,8 @@ import { MainComponent } from './main/main.component';
     ContactComponent,
     FooterComponent,
     ImpressumComponent,
-    MainComponent
+    MainComponent,
+    ScrollToDirective
   ],
   imports: [
     BrowserModule,
