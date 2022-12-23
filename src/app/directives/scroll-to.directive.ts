@@ -1,4 +1,6 @@
 import { Directive, Input, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 
 @Directive({
@@ -8,11 +10,13 @@ export class ScrollToDirective {
   @Input() target = '';
   @HostListener('click')
   onClick() {
-    console.log(this.target);
+    this.router.navigate(['/']);
     const targetElement = document.querySelector(this.target);
     targetElement.scrollIntoView({behavior: 'smooth'});
   }
 
-  constructor() { }
+  constructor(public router: Router) { 
+
+  }
 
 }
