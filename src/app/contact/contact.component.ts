@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  url = '../../assets/img/to-top.png';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onMouseEnter() {
+    this.url = '../../assets/img/to-top-hover.png'
+  }
+
+  onMouseOut() {
+    this.url = '../../assets/img/to-top.png'
   }
 
 }
