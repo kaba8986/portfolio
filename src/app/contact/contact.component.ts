@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'ab-contact',
@@ -12,6 +13,9 @@ export class ContactComponent implements OnInit {
   email = '';
   message = '';
 
+  name_validity = 'alert';
+  email_validity = 'alert';
+  message_validity = 'alert';
 
   constructor() {
 

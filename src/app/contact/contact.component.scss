@@ -57,6 +57,15 @@ input[type="text"], input[type="email"] {
   border: 1px solid #E61C40 !important;
 }
 
+.is-valid {
+  border: 1px solid #70E61C !important;
+}
+
+input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
+  border: 1px solid #70E61C !important;
+}
+
+
 textarea {
   width: 100%;
   padding: 15px 25px;

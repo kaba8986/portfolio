@@ -20,7 +20,9 @@ import { MainComponent } from './main/main.component';
 import { FormComponent } from './form/form.component';
 
 import { ScrollToDirective } from './directives/scroll-to.directive';
-import { InputValidatorDirective } from './input-validator.directive';
+import { InputValidatorDirective } from './directives/input-validator.directive';
+import { MailValidatorDirective } from './directives/mail-validator.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -41,14 +43,16 @@ import { InputValidatorDirective } from './input-validator.directive';
     MainComponent,
     ScrollToDirective,
     FormComponent,
-    InputValidatorDirective
+    InputValidatorDirective,
+    MailValidatorDirective
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
     NoopAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

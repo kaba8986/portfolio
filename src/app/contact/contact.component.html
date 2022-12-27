@@ -9,23 +9,30 @@
     <div class="form-box">
       <form>
         <div class="form-group">
-          <input type="text" class="form-control" name="name" placeholder="Your name" [(ngModel)]="name" #nameNgModel="ngModel" abInputValidator [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid">
+          <input type="text" class="form-control" name="name" placeholder="Your name"  [(ngModel)]="name" #nameNgModel="ngModel" abInputValidator [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid" required>
           <span class="invalid-feedback" *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid"> 
-            Your name is required. 
+            Name is required. 
           </span>
           <img src="../../assets/img/alert.png" alt="" class="invalid-icon" *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid">
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" name="email" placeholder="Your email" [(ngModel)]="email" #emailNgModel="ngModel" abInputValidator [class.is-invalid]="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
+
+
+
+
+          <input type="email" class="form-control" name="email" placeholder="Your email" [(ngModel)]="email" #emailNgModel="ngModel" abInputValidator [class.is-invalid]="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid" required  required>
           <span class="invalid-feedback" *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid"> 
-            Your email is required. 
+            Valid email is required. 
           </span>
           <img src="../../assets/img/alert.png" alt="" class="invalid-icon" *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
+
+
+          
         </div>
         <div class="form-group">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message" #messageNgModel="ngModel" abInputValidator [class.is-invalid]="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message" #messageNgModel="ngModel" abInputValidator [class.is-invalid]="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid" required></textarea>
           <span class="invalid-feedback" *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid"> 
-            Your message is empty. 
+            Message is empty. 
           </span>
           <img src="../../assets/img/alert.png" alt="" class="invalid-icon" *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
         </div>
