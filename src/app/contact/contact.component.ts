@@ -8,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   url = '../../assets/img/to-top.png';
+  name = '';
+  email = '';
+  message = '';
 
-  constructor() { }
+
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
+
+
 
   onMouseEnter() {
     this.url = '../../assets/img/to-top-hover.png'

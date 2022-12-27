@@ -32,9 +32,15 @@ form {
   width: 620px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 40px;
   align-items: center;
 }
+
+.form-group {
+  width: 100%;
+  position: relative;
+}
+
 
 input[type="text"], input[type="email"] {
   height: 50px;
@@ -45,6 +51,10 @@ input[type="text"], input[type="email"] {
   border: 1px solid #4B47FF;
   border-radius: 10px;
   outline: none;
+}
+
+.is-invalid {
+  border: 1px solid #E61C40 !important;
 }
 
 textarea {
@@ -82,5 +92,22 @@ input[type="submit"] {
   right: 200px;
   bottom: 100px;
   cursor: pointer;
+}
+
+.invalid-feedback {
+  position: absolute;
+  bottom: -24px;
+  left: 5px;
+  color: #E61C40;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.invalid-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
 }
 

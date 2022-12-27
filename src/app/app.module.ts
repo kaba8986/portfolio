@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HomeGreetingComponent } from './home-greeting/home-greeting.component';
 import { AboutComponent } from './about/about.component';
@@ -13,9 +16,11 @@ import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
-import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
+import { FormComponent } from './form/form.component';
+
 import { ScrollToDirective } from './directives/scroll-to.directive';
+import { InputValidatorDirective } from './input-validator.directive';
 
 
 
@@ -34,12 +39,16 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
     FooterComponent,
     ImpressumComponent,
     MainComponent,
-    ScrollToDirective
+    ScrollToDirective,
+    FormComponent,
+    InputValidatorDirective
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
+    FormsModule,
     NoopAnimationsModule,
-    AppRoutingModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
