@@ -27,3 +27,25 @@ p {
 
 /* Importing Bootstrap SCSS file. */
 
+@media (max-width: 1240px) {
+    h1 {
+      font-size: 70px;
+      line-height: 80px;
+    }
+}
+
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
