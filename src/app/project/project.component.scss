@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 200px;
 } 
 
 img {
@@ -91,6 +92,14 @@ h4 {
 }
 
 
+@media (max-width: 1500px) {
+
+  .container {
+    padding: 0 120px;
+  }
+}
+
+
 @media (max-width: 1100px) {
 
   .container {
@@ -126,6 +135,21 @@ h4 {
   }
 }
 
+@media (max-width: 1020px) {
+
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .container {
+    padding: 0 80px;
+  }
+}
+
+
 @media (max-width: 860px) {
   .container {
     flex-direction: column;
@@ -157,6 +181,13 @@ h4 {
     gap: 80px;
   }
   
+}
+
+@media (max-width: 720px) {
+
+  .container {
+    padding: 0 40px;
+  }
 }
 
 

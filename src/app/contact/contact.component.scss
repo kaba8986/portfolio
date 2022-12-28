@@ -31,6 +31,7 @@ span {
 }
 
 .form-box {
+  position: relative;
   width: 620px;
 }
 
@@ -105,8 +106,8 @@ button {
 
 .to-top {
   position: absolute;
-  right: 200px;
-  bottom: 100px;
+  right: 0px;
+  bottom: 0px;
   cursor: pointer;
 }
 
@@ -136,12 +137,6 @@ button {
   .content {
     gap: 50px;
   }
-
-  .to-top {
-    right: 120px;
-    bottom: 100px;
-  }
-
 }
 
 
@@ -149,13 +144,21 @@ button {
   .container {
     padding: 200px 100px 0;
   }
+}
 
-  
-  .to-top {
-    right: 100px;
-    bottom: 50px;
+
+@media (max-width: 940px) {
+  .container {
+    padding: 200px 80px 0;
   }
 
+  form {
+    align-items: flex-start;
+  }
+
+  button {
+    padding: 15px 24px;
+  }
 }
 
 
@@ -168,11 +171,6 @@ button {
     flex-direction: column;
   }
 
-  .to-top {
-    right: 25px;
-    bottom: 50px;
-  }
-
   .form-box {
     width: 100%;
   }
@@ -183,5 +181,9 @@ button {
 
   h1, h2 {
     margin-bottom: 25px;
+  }
+
+  form {
+    align-items: center;
   }
 }
