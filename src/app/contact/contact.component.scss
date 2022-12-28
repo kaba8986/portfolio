@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 200px;
+  padding: 200px 200px 0;
   position: relative;
   margin-top: 100px;
 }
@@ -127,3 +127,61 @@ button {
   height: 20px;
 }
 
+@media (max-width: 1500px) {
+  .container {
+    padding: 200px 120px 0;
+    margin-top: 0;
+  }
+
+  .content {
+    gap: 50px;
+  }
+
+  .to-top {
+    right: 120px;
+    bottom: 100px;
+  }
+
+}
+
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 200px 100px 0;
+  }
+
+  
+  .to-top {
+    right: 100px;
+    bottom: 50px;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+  .container {
+    padding: 120px 25px 100px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .to-top {
+    right: 25px;
+    bottom: 50px;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  h1, h2 {
+    margin-bottom: 25px;
+  }
+}
