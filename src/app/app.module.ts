@@ -23,6 +23,7 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
 import { InputValidatorDirective } from './directives/input-validator.directive';
 import { MailValidatorDirective } from './directives/mail-validator.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -44,7 +45,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ScrollToDirective,
     FormComponent,
     InputValidatorDirective,
-    MailValidatorDirective
+    MailValidatorDirective,
+    TestComponent
   ],
   imports: [
     AppRoutingModule,

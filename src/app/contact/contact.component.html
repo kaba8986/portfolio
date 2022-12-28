@@ -7,7 +7,7 @@
       <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
     <div class="form-box">
-      <form>
+      <form action="https://andreas-burghardt.developerakademie.net/send_mail/send_mail.php" method="post">
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Your name"  [(ngModel)]="name" #nameNgModel="ngModel" abInputValidator [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid" required>
           <span class="invalid-feedback" *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid"> 
@@ -36,7 +36,10 @@
           </span>
           <img src="../../assets/img/alert.png" alt="" class="invalid-icon" *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
         </div>
-        <input type="submit" value="Send message">
+
+        <button type="submit">Send message</button>
+        <!-- <input type="submit" value="Send message"> -->
+
       </form>
     </div>
   </div>
