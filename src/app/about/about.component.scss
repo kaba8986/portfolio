@@ -64,13 +64,12 @@ h1 {
 @media (max-width: 1500px) {
   .container {
     padding:   0 0 0 120px;
+    margin-top: 0;
   }
 
   .profile-container {
     width: 600px;
   }
-
- 
 }
 
 @media (max-width: 1240px) {
@@ -103,9 +102,6 @@ h1 {
 
 
 @media (max-width: 940px) {
-  .container {
-    padding:   0 100px;
-  }
 
   .about-text {
     width: 100%;

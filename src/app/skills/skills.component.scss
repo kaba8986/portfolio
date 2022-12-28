@@ -3,10 +3,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
-  padding: 0 200px;
+  height: 100vh;
+  padding: 0 0 0 200px;
   position: relative;
-  gap: 100px;
   margin-top: 100px;
 }
 
@@ -15,7 +14,7 @@
   flex-wrap: wrap;
   column-gap: 120px;
   row-gap: 60px;
-  width: 720px;
+  max-width: 720px;
 }
 
 .img-box {
@@ -38,27 +37,39 @@
 }
 
 .img-box:hover img {
-    animation: bounce 0.8s linear;
+  animation: bounce 0.8s linear;
 }
 
 @keyframes bounce {
-  20%, 50%, 80%, to {
+
+  20%,
+  50%,
+  80%,
+  to {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   70% {
     transform: translateY(-15px);
   }
+
   90% {
     transform: translateY(-4px);
   }
 }
 
+.right-container {
+  display: flex;
+  gap: 20px;
+}
+
 .text-box {
   width: 480px;
-  text-align: center;
+  text-align: right;
 }
 
 h1 {
@@ -76,16 +87,125 @@ button {
   cursor: pointer;
 
   &:hover {
-      transform: scale(1.125);
-      transition: 0.125s;
-      background-color: #4B47FF;
+    transform: scale(1.125);
+    transition: 0.125s;
+    background-color: #4B47FF;
   }
 }
 
+#mobile-button {
+  display: none;
+}
+
 .line {
-  position: absolute;
   height: 4px;
-  width: 160px;
+  width: 150px;
   background-color: #4B47FF;
-  right: 0;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 0 0 120px;
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 1360px) {
+
+  .icon-container {
+    column-gap: 90px;
+    row-gap: 50px;
+    width: 720px;
+  }
+
+  .line {
+    width: 90px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .line {
+    margin-top: 35px;
+  }
+}
+
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 0 0 100px;
+  }
+
+  .line {
+    width: 50px;
+  }
+}
+
+
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px;
+    padding: 0;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 120px;
+    row-gap: 60px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 80px;
+  }
+  
+
+  .text-box {
+    text-align: right;
+    max-width: 480px;
+    width: auto;
+    padding-left: 25px;
+  }
+
+  #desktop-button {
+    display: none;
+  }
+
+  #mobile-button {
+    display: flex;
+    margin-top: 0px;
+    align-self: center;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .icon-container {
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0 25px;
+  }
+
+  .img-box {
+  
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  
+    span {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  .line {
+    margin-top: 26px;
+  }
 }
