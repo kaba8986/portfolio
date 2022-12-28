@@ -209,3 +209,9 @@ button {
     margin-top: 26px;
   }
 }
+
+@media (max-width: 600px) {
+  button {
+    padding: 8px 24px;
+  }
+}

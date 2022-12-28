@@ -57,3 +57,10 @@ button {
         background-color: #4B47FF;
     }
 }
+
+
+@media (max-width: 600px) {
+    button {
+      padding: 12px 24px;
+    }
+  }

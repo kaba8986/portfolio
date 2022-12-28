@@ -1,10 +1,13 @@
 <div class="container">
   <div class="portfolio-text">
-    <div class="portfolio-title">
-      <h1>Portfolio</h1>
-    </div>
-    <p>This page is a sample of my work - please feel free to try them out.</p>
-    <div class="line"></div>
+
+      <div class="line1"></div>
+      <div class="text-box">
+        <h1>Portfolio</h1>
+        <p>This page is a sample of my work - please feel free to try them out.</p>
+      </div>
+      <div class="line2"></div>
+
   </div>
   <div class="project-container">
     <ab-project *ngFor="let project of projects; let i = index;" [reverse]="i%2 == 1" [currProject]="project"></ab-project>
