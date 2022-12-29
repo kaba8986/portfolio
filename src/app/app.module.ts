@@ -18,11 +18,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { MainComponent } from './main/main.component';
 import { FormComponent } from './form/form.component';
-
 import { ScrollToDirective } from './directives/scroll-to.directive';
 import { InputValidatorDirective } from './directives/input-validator.directive';
 import { MailValidatorDirective } from './directives/mail-validator.directive';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TestComponent } from './test/test.component';
 
 
@@ -53,8 +51,7 @@ import { TestComponent } from './test/test.component';
     BrowserModule,
     FormsModule,
     NoopAnimationsModule,
-    ReactiveFormsModule,
-    NgbModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
