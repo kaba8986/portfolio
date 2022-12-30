@@ -118,6 +118,10 @@
   gap: 35px;
   font-size: 23px;
   transition: all 0.25s ease-in-out;
+
+  a {
+    cursor: pointer;
+  }
 }
 
 .mobile-menu.move {

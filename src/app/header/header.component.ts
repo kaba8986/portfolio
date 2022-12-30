@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   open: boolean = false;
   icon_src: string = "../../assets/img/burger.png";
 
-  constructor() { }
+  constructor(private window: Window) { }
 
   ngOnInit(): void {
   }
@@ -27,8 +27,8 @@ export class HeaderComponent implements OnInit {
     icons.forEach((icon) => {
       icon.classList.toggle('open');
     })
-
     document.querySelector('.mobile-menu').classList.toggle('move');
+    !this.open ? this.open = true : this.open = false;
   }
 
 }

@@ -7,13 +7,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
 body {
   background-color: #141d2f;
   color: #fff;
   overflow-x: hidden;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 h1 {
   font-size: 90px;

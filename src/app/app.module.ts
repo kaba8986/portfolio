@@ -22,6 +22,7 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
 import { InputValidatorDirective } from './directives/input-validator.directive';
 import { MailValidatorDirective } from './directives/mail-validator.directive';
 import { TestComponent } from './test/test.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 
 
@@ -44,7 +45,8 @@ import { TestComponent } from './test/test.component';
     FormComponent,
     InputValidatorDirective,
     MailValidatorDirective,
-    TestComponent
+    TestComponent,
+    MobileMenuComponent
   ],
   imports: [
     AppRoutingModule,
@@ -53,7 +55,9 @@ import { TestComponent } from './test/test.component';
     NoopAnimationsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: Window, useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
