@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormControl} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ab-contact',
@@ -23,7 +24,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
 
-  constructor() {
+  constructor(public router: Router) {
 
    }
 
@@ -63,12 +64,16 @@ export class ContactComponent implements OnInit {
       body: fd
     })
 
+    this.router.navigate(['/success']);
+
     //Text noch anzeigen - Nachricht gesendet o ä
 
     nameField.disabled = false;
     emailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+
+
   }
 
 }
