@@ -55,6 +55,7 @@ export class ContactComponent implements OnInit {
 
     let fd = new FormData();
     fd.append('name', nameField.value);
+    fd.append('email', emailField.value);
     fd.append('message', messageField.value);
 
     //send
