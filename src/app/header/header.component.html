@@ -1,13 +1,24 @@
 <div class="menu">
-  <span id="logo">Andrea<span id="logo-s">s</span></span>
+  <span class="logo">Andrea<span id="logo-s">s</span></span>
   <div class="nav">
     <a abScrollTo target="#about">About me</a>
     <a abScrollTo target="#skills">Skills</a>
     <a abScrollTo target="#portfolio">Portfolio</a>
   </div>
-  <img id="menu-icon" src="../../assets/img/burger.png" alt="">
+  <div class="menu-icon desktop" (click)="toggleMenu()">
+    <div class="line"></div>
+  </div>
+  <!-- <img class="menu-icon" [src]="icon_src" (click)="toggleMenu()"> -->
 </div>
+
 <div class="mobile-menu">
+  <div class="mobile-header">
+    <span class="logo">Andrea<span id="logo-s">s</span></span>
+    <div class="menu-icon mobile" (click)="toggleMenu()">
+      <div class="line"></div>
+    </div>
+    <!-- <img class="menu-icon" [src]="icon_src" (click)="toggleMenu()"> -->
+  </div>
   <a abScrollTo target="#about">About me</a>
   <a abScrollTo target="#skills">Skills</a>
   <a abScrollTo target="#portfolio">Portfolio</a>
