@@ -1,9 +1,8 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 200px 200px 0;
+  padding: 120px 200px 100px;
   position: relative;
-  margin-top: 100px;
 }
 
 .content {
@@ -130,7 +129,7 @@ button {
 
 @media (max-width: 1500px) {
   .container {
-    padding: 200px 120px 0;
+    padding: 130px 120px 100px;
     margin-top: 0;
   }
 
@@ -142,14 +141,14 @@ button {
 
 @media (max-width: 1020px) {
   .container {
-    padding: 200px 100px 0;
+    padding: 130px 100px 100px;
   }
 }
 
 
 @media (max-width: 940px) {
   .container {
-    padding: 200px 80px 0;
+    padding: 130px 80px 100px;
   }
 
   form {
@@ -185,5 +184,14 @@ button {
 
   form {
     align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .to-top {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -65px;
+    cursor: pointer;
   }
 }
