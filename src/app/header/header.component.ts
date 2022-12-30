@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 
 @Component({
@@ -10,9 +10,14 @@ export class HeaderComponent implements OnInit {
 
   marker: string = 'home';
   open: boolean = false;
-  icon_src: string = "../../assets/img/burger.png";
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if(this.open && window.innerWidth > 720) {
+      this.toggleMenu();
+    }
+  }
 
-  constructor(private window: Window) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

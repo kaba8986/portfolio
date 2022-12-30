@@ -116,11 +116,15 @@
   justify-content: center;
   align-items: center;
   gap: 35px;
-  font-size: 23px;
+  font-size: 28px;
   transition: all 0.25s ease-in-out;
 
   a {
     cursor: pointer;
+
+    &:hover{
+      color: rgb(197, 197, 197);
+    }
   }
 }
 
