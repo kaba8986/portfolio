@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MobileMenuComponent } from './mobile-menu.component';
+import { MailSentComponent } from './mail-sent.component';
 
-describe('MobileMenuComponent', () => {
-  let component: MobileMenuComponent;
-  let fixture: ComponentFixture<MobileMenuComponent>;
+describe('MailSentComponent', () => {
+  let component: MailSentComponent;
+  let fixture: ComponentFixture<MailSentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MobileMenuComponent ]
+      declarations: [ MailSentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MobileMenuComponent);
+    fixture = TestBed.createComponent(MailSentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

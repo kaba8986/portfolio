@@ -8,12 +8,14 @@
       <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
     <div class="form-box">
-      <form action="https://andreas-burghardt.developerakademie.net/send_mail/send_mail.php" method="post">
+      <form (submit)="sendMail()" method="post" ngNativeValidate #myForm>
+
+        <!-- Input Name -->
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Your name" [(ngModel)]="name"
             #nameNgModel="ngModel" abInputValidator
-            [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid"
-            required>
+            [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid" required
+            #nameField>
           <span class="invalid-feedback"
             *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid">
             Name is required.
@@ -23,13 +25,12 @@
         </div>
         <div class="form-group">
 
-
-
+          <!-- Input Mail -->
 
           <input type="email" class="form-control" name="email" placeholder="Your email" [(ngModel)]="email"
             #emailNgModel="ngModel" abInputValidator
             [class.is-invalid]="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid"
-            required required>
+            required required #emailField>
           <span class="invalid-feedback"
             *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
             Valid email is required.
@@ -37,14 +38,14 @@
           <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
             *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
 
-
+          <!-- Input Message -->
 
         </div>
         <div class="form-group">
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message"
             #messageNgModel="ngModel" abInputValidator
             [class.is-invalid]="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid"
-            required></textarea>
+            required #messageField></textarea>
           <span class="invalid-feedback"
             *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
             Message is empty.
@@ -53,12 +54,13 @@
             *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
         </div>
 
-        <button type="submit">Send message</button>
-        <!-- <input type="submit" value="Send message"> -->
+        <!-- Send Button -->
+
+        <button type="submit" #sendButton>Send message</button>
 
       </form>
       <img class="to-top" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseOut()" [src]="url" alt="" abScrollTo
-      target="#home">
+        target="#home">
     </div>
   </div>
 </div>
