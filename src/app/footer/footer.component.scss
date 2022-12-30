@@ -2,7 +2,7 @@
   // position: absolute;
   // bottom: 0;
   width: 100%;
-  padding: 130px 200px;
+  padding: 60px 200px;
   border-top: 4px solid #00BEE8;
   display: flex;
   flex-direction: column;
@@ -69,23 +69,23 @@
 
 @media (max-width: 1500px) {
   .container {
-    padding: 130px 120px;
+    padding: 60px 120px;
   }
 }
 
 
 @media (max-width: 1020px) {
   .container {
-    padding: 65px 100px;
+    padding: 30px 100px;
   }
 
   .footer-line {
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   #name {
-    margin-bottom: 55px;
+    display: none;
   }
 
   #copy {
@@ -96,6 +96,6 @@
 
 @media (max-width: 720px) {
   .container {
-    padding: 65px 40px;
+    padding: 30px 40px;
   }
 }

@@ -13,7 +13,7 @@ import { FormComponent } from './form/form.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { HomeGreetingComponent } from './home-greeting/home-greeting.component';
-import { ImpressumComponent } from './impressum/impressum.component';
+import { ImpressComponent } from './impress/impress.component';
 import { MainComponent } from './main/main.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectComponent } from './project/project.component';
@@ -41,7 +41,7 @@ import { MailSentComponent } from './mail-sent/mail-sent.component';
     ProjectComponent,
     ContactComponent,
     FooterComponent,
-    ImpressumComponent,
+    ImpressComponent,
     MainComponent,
     ScrollToDirective,
     FormComponent,
