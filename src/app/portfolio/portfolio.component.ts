@@ -18,30 +18,32 @@ interface PROJECT {
 export class PortfolioComponent implements OnInit {
 
   projects: PROJECT[] = ProjectsJson;
+  // filteredProjects: PROJECT[] = [];
+
 
 
 
   constructor() {
-    console.log(this.projects);
+
    }
 
   ngOnInit(): void {
+
   }
 
   filter(subject) {
-    console.log(subject);
-    let filteredProjects = this.projects.filter((proj) => {
-    proj.languages.indexOf(subject) > -1;
-   })
-   this.projects = filteredProjects;
-
+    this.resetFilter();
+    let filteredProjects = [];
+    this.projects.forEach((proj) => {
+      if(proj.languages.toLowerCase().includes(subject)) {
+        filteredProjects.push(proj);
+      }
+    })
+    this.projects = filteredProjects;
   }
 
   resetFilter() {
     this.projects = ProjectsJson;
- 
-
-
   }
 
 }
