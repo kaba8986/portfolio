@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  padding: 0 0 0 200px;
+  padding: 130px 0 0 200px;
   position: relative;
 }
 
@@ -83,6 +83,7 @@ button {
   font-size: 23px;
   border-radius: 10px;
   transition: 0.2s;
+  border: none;
   cursor: pointer;
 
   &:hover {
@@ -106,7 +107,7 @@ button {
 
 @media (max-width: 1500px) {
   .container {
-    padding: 0 0 0 120px;
+    padding: 130px 0 0 120px;
     margin-top: 0;
   }
 }
@@ -134,7 +135,7 @@ button {
 
 @media (max-width: 1020px) {
   .container {
-    padding: 0 0 0 100px;
+    padding: 130px 0 0 100px;
   }
 
   .line {

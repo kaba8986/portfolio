@@ -12,11 +12,14 @@ export class ProjectComponent implements OnInit {
   @Input() reverse: boolean = false; //get boolean from portfolio component
   @Input() currProject = new Project(); //get current Project from portfolio component
 
+
   constructor() {
    }
 
 
   ngOnInit(): void {
+
+
   }
 
 }
