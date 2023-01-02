@@ -18,7 +18,7 @@
   {
     "title": "Pokédex",
     "languages": "Javascript | HTML | CSS | API",
-    "description": "Based on the PokéAPI a simple library that provides and catalogues okemon information.",
+    "description": "Based on the PokéAPI a simple library that provides and catalogues Pokemon information.",
     "live": "https://andreas-burghardt.developerakademie.net/Pokedex/index.html",
     "github": "https://github.com/kaba8986/pokedex",
     "image": "pokedex.png"

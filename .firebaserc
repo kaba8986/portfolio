@@ -6,9 +6,16 @@
           "portfolio-6db3b"
         ]
       }
+    },
+    "portfolio-67869": {
+      "hosting": {
+        "portfolio": [
+          "portfolio-67869"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "portfolio-6db3b"
+    "default": "portfolio-67869"
   }
 }

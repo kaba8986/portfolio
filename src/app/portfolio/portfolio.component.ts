@@ -18,12 +18,17 @@ interface PROJECT {
 export class PortfolioComponent implements OnInit {
 
   projects: PROJECT[] = ProjectsJson;
+  filteredProjects: string[];
 
   constructor() {
     console.log(this.projects);
    }
 
   ngOnInit(): void {
+  }
+
+  filter(subject) {
+   
   }
 
 }
