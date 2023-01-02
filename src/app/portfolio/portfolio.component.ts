@@ -18,7 +18,8 @@ interface PROJECT {
 export class PortfolioComponent implements OnInit {
 
   projects: PROJECT[] = ProjectsJson;
-  filteredProjects: string[];
+
+
 
   constructor() {
     console.log(this.projects);
@@ -28,7 +29,19 @@ export class PortfolioComponent implements OnInit {
   }
 
   filter(subject) {
-   
+    console.log(subject);
+    let filteredProjects = this.projects.filter((proj) => {
+    proj.languages.indexOf(subject) > -1;
+   })
+   this.projects = filteredProjects;
+
+  }
+
+  resetFilter() {
+    this.projects = ProjectsJson;
+ 
+
+
   }
 
 }
