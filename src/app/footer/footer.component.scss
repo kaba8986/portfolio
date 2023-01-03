@@ -30,7 +30,7 @@
 
 .link-box {
   position: relative;
-  width: 100%;
+  align-self: flex-start;
   padding: 10px 0;
 }
 
@@ -90,6 +90,19 @@ width: 60px;
 @media (max-width: 1020px) {
   .container {
     padding: 30px 100px;
+  }
+
+  .name-box {
+    padding: 20px 0;
+  }
+
+  .link-box {
+    align-self: center;
+    padding: 0;
+  }
+
+  .underline {
+    display: none;
   }
 
   .footer-line {
