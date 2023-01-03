@@ -18,10 +18,7 @@ interface PROJECT {
 export class PortfolioComponent implements OnInit {
 
   projects: PROJECT[] = ProjectsJson;
-  // filteredProjects: PROJECT[] = [];
-
-
-
+  activeBtn: string = 'btn1';
 
   constructor() {
 
@@ -44,6 +41,14 @@ export class PortfolioComponent implements OnInit {
 
   resetFilter() {
     this.projects = ProjectsJson;
+  }
+
+  setActive(btn) {
+    this.activeBtn = btn;
+  }
+
+  isActive(btn) {
+    return this.activeBtn == btn;
   }
 
 }
