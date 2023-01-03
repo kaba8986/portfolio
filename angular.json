@@ -32,7 +32,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/scroll-out.js"
+
             ]
           },
           "configurations": {

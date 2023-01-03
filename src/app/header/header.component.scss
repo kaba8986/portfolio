@@ -28,6 +28,7 @@
 .nav {
   display: flex;
   gap: 35px;
+  height: 100%;
 
   a {
     font-size: 23px;
@@ -35,6 +36,7 @@
     text-decoration: none;
     color: #fff;
     transition: 0.2s;
+    line-height: 100px;
     cursor: pointer;
 
     &:hover {
