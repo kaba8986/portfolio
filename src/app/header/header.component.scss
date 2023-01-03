@@ -13,13 +13,16 @@
   z-index: 1000;
 }
 
-.logo {
-  font-size: 36px;
-  font-weight: 700;
-}
+#logo {
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.125s;
 
-.logo-s {
-  // color: #00BEE8;
+  &:hover {
+    filter: brightness(1.3);
+    transition: 0.125s;
+  }
 }
 
 .nav {

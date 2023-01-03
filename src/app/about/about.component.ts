@@ -1,5 +1,6 @@
-import { Component, OnInit, AfterContentInit, OnDestroy } from '@angular/core';
-import { ScrollOut } from 'scroll-out';
+import { Component, OnInit} from '@angular/core';
+
+
 
 
 @Component({
@@ -7,19 +8,13 @@ import { ScrollOut } from 'scroll-out';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements  AfterContentInit, OnDestroy  {
-  so: any;
+export class AboutComponent implements OnInit {
+
 
   constructor() { }
 
-  ngAfterContentInit() {
-    this.so = ScrollOut({
-      // scope: this.el.nativeElement
-    });
+  ngOnInit(): void {
   }
 
-  ngOnDestroy() {
-    this.so.teardown();
-  }
 
 }
