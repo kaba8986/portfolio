@@ -1,6 +1,6 @@
 <div class="container" [class.flex-reverse]="reverse">
-  <img [class.img-reverse]="reverse" src="assets/img/projects/{{ currProject.image }}" alt="">
-  <div class="description" [class.desc-reverse]="reverse">
+  <img [class.img-reverse]="reverse" src="assets/img/projects/{{ currProject.image }}" alt="" data-aos="fade-up">
+  <div class="description" [class.desc-reverse]="reverse" data-aos="fade-down">
     <h3>{{ currProject.title }}</h3>
     <h4>{{ currProject.languages }}</h4>
     <p>{{ currProject.description }}</p>
