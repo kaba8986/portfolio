@@ -1,8 +1,5 @@
-import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Component, OnInit, HostListener } from '@angular/core';
 
-gsap.registerPlugin(ScrollTrigger);
 
 
 @Component({
@@ -11,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('nav', {static: true}) nav: ElementRef<HTMLDivElement>
+
 
   marker: string = 'home';
   open: boolean = false;
@@ -25,7 +22,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.initialAnimations();
+
   }
 
   scrollTo(anchor: string) {
@@ -42,16 +39,5 @@ export class HeaderComponent implements OnInit {
     !this.open ? this.open = true : this.open = false;
   }
 
-  initialAnimations(): void {
-    
-    gsap.from(this.nav.nativeElement.childNodes, {
-      duration: 0.5,
-      opacity: 0.5,
-      y: -20,
-      stagger: 0.2,
-      delay: 0.3
-    })
-      
-  }
 
 }

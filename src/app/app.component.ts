@@ -1,6 +1,7 @@
 import { ViewportScroller } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 
 export interface Hero {
   id: number;
@@ -13,10 +14,14 @@ export interface Hero {
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   
   constructor(public router: Router) {
     
+  }
+
+  ngOnInit(): void {
+    AOS.init();
   }
 
 }
