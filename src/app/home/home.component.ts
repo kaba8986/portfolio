@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
         value = 1 + window.scrollY/ -420;
       }
       this.opacVal = value;
-      console.log(this.opacVal);
     })
   }
 

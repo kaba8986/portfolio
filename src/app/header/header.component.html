@@ -1,6 +1,6 @@
 <div class="menu">
   <!-- <span class="logo">Andrea<span id="logo-s">s</span></span> -->
-  <img src="assets/img/logo4.png" alt="" id="logo" #logo>
+  <img src="assets/img/logo4.png" abScrollTo target="#home" class="logo" #logo>
   <div class="nav">
     <a abScrollTo target="#about">About me</a>
     <a abScrollTo target="#skills">Skills</a>
@@ -14,7 +14,7 @@
 
 <div class="mobile-menu">
   <div class="mobile-header">
-    <span class="logo">Andrea<span id="logo-s">s</span></span>
+    <img src="assets/img/logo4.png" abScrollTo target="#home" class="logo" #logo (click)="toggleMenu()">
     <div class="menu-icon mobile" (click)="toggleMenu()">
       <div class="line"></div>
     </div>

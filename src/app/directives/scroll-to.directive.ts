@@ -10,14 +10,17 @@ export class ScrollToDirective {
   @Input() target = '';
   @HostListener('click')
   onClick() {
+    
     if(this.router.url !== '/') {
       this.router.navigate(['/']);
-
     }
-    
-    const targetElement = document.querySelector(this.target);
 
+   setTimeout(() => {
+    const targetElement = document.querySelector(this.target);
     targetElement.scrollIntoView({behavior: 'smooth'});
+   }, 100);
+    
+
   }
 
   constructor(public router: Router) { 
