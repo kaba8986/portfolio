@@ -191,7 +191,7 @@ button {
 @media (max-width: 550px) {
   .to-top {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
     bottom: -65px;
     cursor: pointer;
   }

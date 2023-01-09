@@ -119,8 +119,9 @@ p {
 
 @media (max-width: 1020px) {
   .container {
-    padding:   0 100px;
+    padding: 160px 100px 60px;
     gap: 60px;
+    height: auto;
   }
 
   .profile-container {
@@ -136,7 +137,7 @@ p {
 @media (max-width: 940px) {
 
   .container {
-    padding:   0 80px;
+    padding: 160px 80px 60px;
   }
 
   .about-text {
@@ -150,20 +151,20 @@ p {
 
 @media (max-width: 720px) {
   .container {
-    padding:   0 40px;
+    padding: 160px 40px 60px;
   }
 }
 
 @media (max-width: 600px) {
   .container {
-    padding: 0 25px;
+    padding: 160px 25px 60px;
     margin-top: 0;
   }
 }
 
 @media (max-width: 380px) {
   .container {
-    margin-bottom: 120px;
+    // margin-bottom: 120px;
   }
 }
 
