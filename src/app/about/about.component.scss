@@ -68,11 +68,21 @@ p {
 }
 
 .profile-pic {
+
   min-width: 420px;
   height: 420px;
-  object-fit: contain;
   border-radius: 50%;
   border: 4px solid #00BEE8;
+  background: rgba($color: #fff, $alpha: 0.05);
+  overflow: hidden;
+}
+
+.profile-pic img {
+
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateY(42px);
 }
 
 .line {
