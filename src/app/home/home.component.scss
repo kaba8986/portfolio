@@ -167,6 +167,9 @@ button {
 }
 
 
+
+
+
 @media (max-width: 1240px) {
   .container {
     padding: 0 120px;
@@ -294,5 +297,11 @@ button {
 
   .references {
     gap: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding-bottom: 180px;
   }
 }

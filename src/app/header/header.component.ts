@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -19,11 +20,9 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(public router: Router) { }
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   scrollTo(anchor: string) {
     this.marker = anchor;

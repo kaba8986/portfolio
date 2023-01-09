@@ -92,6 +92,7 @@ p {
 }
 
 
+
 @media (max-width: 1500px) {
   .container {
     padding:   0 0 0 120px;
@@ -157,6 +158,12 @@ p {
   .container {
     padding: 0 25px;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    margin-bottom: 120px;
   }
 }
 

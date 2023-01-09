@@ -189,7 +189,7 @@ button {
   .icon-container {
     column-gap: 20px;
     row-gap: 20px;
-    padding: 130px 40px 0 40px;
+    padding: 0px 40px 0 40px;
   }
 
   .img-box {
@@ -216,6 +216,12 @@ button {
   }
 
   .icon-container {
-    padding: 130px 25px 0 25px;
+    padding: 0px 25px 0 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    margin-bottom: 150px;
   }
 }
