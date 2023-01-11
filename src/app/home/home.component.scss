@@ -144,11 +144,11 @@ button {
 
 #rot {
   position: absolute;
-  bottom: 23px;
-  left: 100px;
+  bottom: 8px;
+  left: 90px;
   transform-origin: bottom left;
   transform: rotate(270deg);
-  font-size: 86px;
+  font-size: 90px;
 }
 
 #gradient {
@@ -234,7 +234,8 @@ button {
   }
 
   #rot {
-    bottom: 136px;
+    bottom: 186px;
+    font-size: 96px;
   }
 
 }
@@ -292,11 +293,11 @@ button {
   }
 
   #prof {
-    font-size: 58px;
+    font-size: 48px;
   }
 
   #rot {
-    bottom: 118px;
+    bottom: 82px;
   }
 
   .references {
@@ -312,12 +313,12 @@ button {
 
 @media (max-width: 860px) {
   #rot {
-    font-size: 80px;
-    bottom: 110px;
+    font-size: 90px;
+    bottom: 89px;
   }
 
   #prof {
-    font-size: 48px;
+    font-size: 46px;
   }
 
   #name {
@@ -354,8 +355,8 @@ button {
   }
 
   #rot {
-    font-size: 62px;
-    bottom: 94px;
+    font-size: 68px;
+    bottom: 79px;
     left: 70px;
   }
 
@@ -373,6 +374,14 @@ button {
   .container {
     padding: 300px 25px 130px 25px;
   }
+
+  #prof {
+    font-size: 38px;
+  }
+
+  #rot {
+    bottom: 74px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -383,13 +392,12 @@ button {
   }
 
   #rot {
-    font-size: 44px;
-    bottom: 75px;
+    font-size: 50px;
+    bottom: 118px;
     left: 50px;
   }
 
   #prof {
-    font-size: 38px;
     line-height: 44px;
   }
 }
