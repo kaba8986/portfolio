@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
 import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
@@ -26,6 +27,7 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
 import { InputValidatorDirective } from './directives/input-validator.directive';
 import { MailValidatorDirective } from './directives/mail-validator.directive';
 import { MailSentComponent } from './mail-sent/mail-sent.component';
+import { StartScreenComponent } from './start-screen/start-screen.component';
 
 
 
@@ -48,7 +50,8 @@ import { MailSentComponent } from './mail-sent/mail-sent.component';
     InputValidatorDirective,
     MailValidatorDirective,
     TestComponent,
-    MailSentComponent
+    MailSentComponent,
+    StartScreenComponent
   ],
   imports: [
     AppRoutingModule,

@@ -1,4 +1,4 @@
-<ab-header></ab-header>
+<ab-header *ngIf="this.router.url != '/start'"></ab-header>
 <router-outlet></router-outlet>
-<ab-footer></ab-footer>
+<ab-footer *ngIf="this.router.url != '/start'"></ab-footer>
 

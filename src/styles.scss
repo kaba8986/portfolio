@@ -30,6 +30,11 @@ p {
   font-weight: 300;
 }
 
+.d-none {
+  visibility: hidden;
+  display: none;
+}
+
 /* Importing Bootstrap SCSS file. */
 
 @media (max-width: 1240px) {
