@@ -59,11 +59,12 @@ export class ContactComponent implements OnInit {
     fd.append('message', messageField.value);
 
     //send
-    await fetch("https://andreas-burghardt.developerakademie.net/send_mail/send_mail.php",
+    await fetch("https://andreas-burghardt.de/send_mail/send_mail.php",
     {
       method: 'POST',
       body: fd
     })
+ 
 
     this.router.navigate(['/success']);
 
