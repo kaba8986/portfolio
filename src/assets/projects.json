@@ -3,7 +3,7 @@
     "title": "Join",
     "languages": "Angular | Typescript | HTML | CSS | Firebase",
     "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-    "live": "https://andreas-burghardt.developerakademie.net/Join/index.html",
+    "live": "https://andreas-burghardt.de/projects/join/index.html",
     "github": "https://github.com/kaba8986/Join",
     "image": "join.png"
   },
@@ -11,7 +11,7 @@
     "title": "El Pollo loco",
     "languages": "Javascript | HTML | CSS",
     "description": "A simple Jump-and-Run game based on an object-oriented approach. Help Pépe to find coins and tabasco bottles to fight against the pollo loco.",
-    "live": "https://andreas-burghardt.developerakademie.net/el-pollo-loco/index.html",
+    "live": "https://andreas-burghardt.de/projects/el-pollo-loco/index.html",
     "github": "https://github.com/kaba8986/el-pollo-loco",
     "image": "pollo-loco.png"
   },
@@ -19,7 +19,7 @@
     "title": "Pokédex",
     "languages": "Javascript | HTML | CSS | API",
     "description": "Based on the PokéAPI a simple library that provides and catalogues Pokemon information.",
-    "live": "https://andreas-burghardt.developerakademie.net/Pokedex/index.html",
+    "live": "https://andreas-burghardt.de/projects/pokedex/index.html",
     "github": "https://github.com/kaba8986/pokedex",
     "image": "pokedex.png"
   }
