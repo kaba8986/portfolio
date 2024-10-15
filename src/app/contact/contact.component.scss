@@ -1,3 +1,6 @@
+@import '../../app/shared/styles/colors.scss';
+@import '../../app/shared/styles/utils.scss';
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -53,8 +56,8 @@ input[type="text"], input[type="email"] {
   width: 100%;
   padding-left: 25px;
   background: transparent;
-  color: #fff;
-  border: 1px solid #4B47FF;
+  color: $font-light;
+  border: 1px solid $brand-1;
   border-radius: 10px;
   outline: none;
 }
@@ -76,33 +79,13 @@ textarea {
   width: 100%;
   padding: 15px 25px;
   background: transparent;
-  border: 1px solid #4B47FF;
+  border: 1px solid $brand-1;
   border-radius: 10px;
-  color: #fff;
+  color: $font-light;
   resize: none;
   outline: none;
 }
 
-input[type="submit"],
-button {
-  
-  padding: 15px 30px;
-  background-color: #00BEE8;
-  color: #fff;
-  font-size: 23px;
-  border-radius: 10px;
-  border: unset;
-  transition: 0.2s;
-  display: inline-block;
-  // width: fit-content;
-  cursor: pointer;
-
-  &:hover {
-      transform: scale(1.125);
-      transition: 0.125s;
-      background-color: #4B47FF;
-  }
-}
 
 .to-top {
   position: absolute;

@@ -1,3 +1,6 @@
+@import '../../app/shared/styles/colors.scss';
+@import '../../app/shared/styles/utils.scss';
+
 .container {
   display: flex;
   justify-content: center;
@@ -23,13 +26,13 @@ img {
 h3 {
   font-size: 32px;
   font-weight: 700px;
-  color: #4B47FF;
+  color: $brand-3;
 }
 
 h4 {
   font-size: 23px;
   font-weight: 400;
-  color: #00BEE8;
+  color: $brand-2;
 }
 
 

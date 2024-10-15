@@ -1,3 +1,6 @@
+@import '../../app/shared/styles/colors.scss';
+@import '../../app/shared/styles/utils.scss';
+
 .container {
   display: flex;
   align-items: center;
@@ -76,21 +79,7 @@ h1 {
 }
 
 button {
-  margin-top: 45px;
-  padding: 15px 30px;
-  background-color: #00BEE8;
-  color: #fff;
-  font-size: 23px;
-  border-radius: 10px;
-  transition: 0.2s;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.125);
-    transition: 0.125s;
-    background-color: #4B47FF;
-  }
+  margin-top: 3rem;
 }
 
 #mobile-button {
@@ -100,7 +89,7 @@ button {
 .line {
   height: 4px;
   width: 150px;
-  background-color: #4B47FF;
+  background-color: $brand-3;
   margin-top: 50px;
 }
 

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~aos/dist/aos.css";
+@import "./app/shared/styles/colors.scss";
 
 * {
   margin: 0;
@@ -10,12 +11,11 @@
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
 body {
-  background-color: #141d2f;
-  color: #fff;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $bg-1;
+  color: $font-light;
   overflow-x: hidden;
 }
 
@@ -33,6 +33,46 @@ p {
 .d-none {
   visibility: hidden;
   display: none;
+}
+
+.color-brand-1 {
+  color: $brand-1;
+}
+
+.color-brand-2 {
+  color: $brand-2;
+}
+
+.button-primary,
+.button-secondary {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.125s;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: $brand-1;
+  color: $font-dark;
+  border: 1px solid $brand-1;
+
+  &:hover {
+    transition: 0.125s;
+    background-color: $brand-2;
+  }
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: $brand-1;
+  border: 1px solid $brand-1;
+
+  &:hover {
+    transition: 0.125s;
+    background-color: $brand-1;
+    color: $font-dark;
+  }
 }
 
 /* Importing Bootstrap SCSS file. */

@@ -1,5 +1,5 @@
 import { Input } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Project } from 'src/models/project.class';
 
 @Component({
@@ -7,19 +7,18 @@ import { Project } from 'src/models/project.class';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent {
 
   @Input() reverse: boolean = false; //get boolean from portfolio component
   @Input() currProject = new Project(); //get current Project from portfolio component
 
 
-  constructor() {
+   goToLive(project: Project){
+    window.open(project.live, '_blank')
    }
 
-
-  ngOnInit(): void {
-
-
-  }
+   goToGitHub(project: Project){
+    window.open(project.github, '_blank')
+   }
 
 }

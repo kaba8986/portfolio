@@ -1,213 +1,53 @@
+@import '../../app/shared/styles/colors.scss';
+@import '../../app/shared/styles/utils.scss';
+
 .container {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 200px;
+  padding: 0 $default-padding;
   gap: 40px;
   position: relative;
-  // border: 1px solid red;
 }
 
-/*
-.profile-box {
-  min-width: 390px;
-  height: 500px;
-  // border: 2px solid green;
-  position: relative;
-
-  #profile {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-}
-
-.blurs {
-  position: absolute;
-  width: 400px;
-  z-index: -10;
-}
-
-#blur1 {
-  top: -44px;
-  left: -190px;
-}
-
-#blur2 {
-  top: 15px;
-  left: 100px;
-  transform: rotate(70deg);
-}
-*/
-
-.blurs {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  object-fit: contain;
-  z-index: -10;
-}
-
-#blur1 {
-  left: -350px;
-  transform: rotate(20deg);
-}
-
-#blur2 {
-  right: -300px;
-  transform: rotate(20deg);
-}
-
-.greeting {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.text-box {
-  position: relative;
-}
-
-#name {
-  font-size: 105px;
-  font-weight: 700;
-  line-height: 90px;
-  margin-bottom: 20px;
-  padding-left: 100px;
-  display: inline-block;
-}
-
-#prof {
-  font-size: 70px;
-  color: #4B47FF;
-  text-transform: uppercase;
-  padding-left: 100px;
+h1 {
+  font-size: 4.25rem;
+  line-height: 5rem;
   font-weight: 400;
 }
 
-/*
-
-.greeting {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 570px;
-  max-width: 600px;
-  // border: 2px solid yellow;
-}
-
-.text-box {
-  position: relative;
-
-}
-
-#name {
-  font-size: 90px;
-  font-weight: 700;
-  line-height: 90px;
-  margin-bottom: 20px;
-  padding-left: 80px;
-  display: inline-block;
-}
-
-#prof {
-  font-size: 52px;
-  color: #4B47FF;
-  text-transform: uppercase;
+h2 {
+  font-size: 3rem;
   font-weight: 400;
 }
 
-*/
-
-button {
-  margin-top: 45px;
-  padding: 15px 30px;
-  background-color: #00BEE8;
-  color: #fff;
-  font-size: 23px;
-  border-radius: 10px;
-  transition: 0.2s;
-  align-self: center;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.125);
-    transition: 0.125s;
-    background-color: #4B47FF;
-  }
+p {
+  line-height: 1.75rem;
+  padding: 0.5rem;
 }
 
-#rot {
-  position: absolute;
-  bottom: 8px;
-  left: 90px;
-  transform-origin: bottom left;
-  transform: rotate(270deg);
-  font-size: 90px;
+h1, h2, p {
+  padding-left:  1.5rem;
 }
 
-#gradient {
-  position: absolute;
-  bottom: -100px;
-  right: 0px;
-  width: 100vw;
-  height: 450px;
+.greeting-tile {
+  margin-top: $header-height;
+  padding: 2rem;
 }
 
-.references {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  height: 40px;
+.contact {
   display: flex;
   align-items: center;
-
-  gap: 45px;
-  font-size: 23px;
-
-  a {
-    display: flex;
-    align-items: center;
-  }
-
-  .line {
-    width: 100px;
-    height: 8px;
-    background-color: #4B47FF;
-  }
+  gap: 2rem;
 
   img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
-    transition: 0.125s;
 
     &:hover {
-      transform: scale(1.25);
-      transition: 0.125s;
+      opacity: 0.6; 
     }
   }
-
-  span {
-    cursor: pointer;
-  }
-}
-
-.scroll-hint {
-  position: absolute;
-  right: 20px;
-  bottom: 90px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 23px;
-  transform: rotate(90deg);
 }
 
 
@@ -215,29 +55,6 @@ button {
   .container {
     padding: 0 120px;
   }
-
-  .greeting {
-    width: 100%;
-    min-width: 570px;
-    max-width: 800px;
-    padding: unset;
-    // border: 2px solid yellow;
-  }
-
-  #name {
-    line-height: 105px;
-  }
-
-  #prof {
-    padding-left: 0;
-
-  }
-
-  #rot {
-    bottom: 186px;
-    font-size: 96px;
-  }
-
 }
 
 @media (max-width: 1500px) {
@@ -245,9 +62,6 @@ button {
     padding: 0 120px;
   }
 }
-
-
-
 
 
 @media (max-width: 1240px) {
@@ -262,25 +76,7 @@ button {
   .container {
     flex-direction: column;
     padding: 130px 120px;
-    // min-height: auto;
     gap: 0px;
-  }
-
-  .scroll-hint {
-    display: none;
-  }
-
-  .references {
-    bottom: 0px;
-  }
-
-  #gradient {
-    bottom: 252px;
-  }
-
-
-  button {
-    align-self: center;
   }
 }
 
@@ -288,20 +84,7 @@ button {
   .container {
     flex-direction: column;
     padding: 130px 100px;
-    // min-height: auto;
     gap: 0px;
-  }
-
-  #prof {
-    font-size: 48px;
-  }
-
-  #rot {
-    bottom: 82px;
-  }
-
-  .references {
-  bottom: 0;
   }
 }
 
@@ -374,40 +157,14 @@ button {
   .container {
     padding: 300px 25px 130px 25px;
   }
-
-  #prof {
-    font-size: 38px;
-  }
-
-  #rot {
-    bottom: 74px;
-  }
 }
 
 @media (max-width: 520px) {
-  #name  {
-    font-size: 46px;
-    line-height: 60px;
-    padding-left: 52px;
-  }
 
-  #rot {
-    font-size: 50px;
-    bottom: 118px;
-    left: 50px;
-  }
-
-  #prof {
-    line-height: 44px;
-  }
 }
 
 @media (max-width: 476px) {
 
-  #rot {
-    bottom: 118px;
-
-  }
 }
 
 

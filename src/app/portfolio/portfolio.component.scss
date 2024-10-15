@@ -1,8 +1,10 @@
+@import '../../app/shared/styles/colors.scss';
+@import '../../app/shared/styles/utils.scss';
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -29,14 +31,14 @@
 
 h1 {
   padding: 40px;
-  background-color: #141d2f;
+  background-color: $bg-1;
 }
 
 .line1,
 .line2,
 .line3 {
   height: 4px;
-  background-color: #4B47FF;
+  background-color: $brand-3;
 }
 .line1 {
   width: 8vw;
@@ -52,7 +54,7 @@ h1 {
   top: 50%;
   left: -8%;
   width: 200%;
-  background-color: #4B47FF;
+  background-color: $brand-3;
   z-index: -100;
 }
 
@@ -72,31 +74,13 @@ h1 {
   margin-bottom: 80px;
 }
 
-.filter-btn {
-  font-size: 23px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 12px 32px;
-  border: 1px solid #00BEE8;
-  border-radius: 10px;
-  background-color: transparent;
-  transition: 0.2s;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #00BEE8;
-    transition: 0.2s;
-  }
-}
-
 .filter-active {
   font-size: 23px;
-  color: #fff;
+  color: $font-light;
   font-weight: 400;
   padding: 12px 32px;
-  background-color: #4B47FF;
-  border: 1px solid #4B47FF;
+  background-color: $brand-3;
+  border: 1px solid $brand-3;
   border-radius: 10px;
   transition: 0.2s;
   cursor: pointer;

@@ -12,9 +12,9 @@
   </div>
   <div class="project-container">
     <div class="filter-buttons">
-      <button class="filter-btn" [class.filter-active]="isActive('btn1')" (click)="resetFilter(); setActive('btn1')">All</button>
-      <button class="filter-btn" [class.filter-active]="isActive('btn2')" (click)="filter('javascript'); setActive('btn2')">JavaScript</button>
-      <button class="filter-btn" [class.filter-active]="isActive('btn3')" (click)="filter('angular'); setActive('btn3')">Angular</button>
+      <button class="button-secondary " [class.button-primary]="isActive('btn1')" (click)="resetFilter(); setActive('btn1')">All</button>
+      <button class="button-secondary" [class.button-primary]="isActive('btn2')" (click)="filter('javascript'); setActive('btn2')">JavaScript</button>
+      <button class="button-secondary" [class.button-primary]="isActive('btn3')" (click)="filter('angular'); setActive('btn3')">Angular</button>
     </div>
     <ab-project *ngFor="let project of projects; let i = index;" [reverse]="i%2 == 1" [currProject]="project"></ab-project>
   </div>

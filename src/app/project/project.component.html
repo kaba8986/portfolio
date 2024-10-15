@@ -1,12 +1,12 @@
 <div class="container" [class.flex-reverse]="reverse">
   <img [class.img-reverse]="reverse" src="assets/img/projects/{{ currProject.image }}" alt="" data-aos="fade-up">
   <div class="description" [class.desc-reverse]="reverse" data-aos="fade-down">
-    <h3>{{ currProject.title }}</h3>
-    <h4>{{ currProject.languages }}</h4>
+    <h3 class="color-brand-1">{{ currProject.title }}</h3>
+    <h4 class="color-brand-2">{{ currProject.languages }}</h4>
     <p>{{ currProject.description }}</p>
     <div class="links" [class.links-reverse]="reverse">
-      <a class="live-test" target="blank"  href="{{ currProject.live }}">Live test</a>
-      <a class="github" target="blank" href="{{ currProject.github }}">Github</a>
+      <button class="button-primary" (click)="goToLive(currProject)">Live test</button>
+      <button class="button-secondary" (click)="goToGitHub(currProject)">Github</button>
     </div>
   </div>
 </div>
