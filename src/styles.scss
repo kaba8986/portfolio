@@ -53,9 +53,9 @@ p {
 }
 
 .button-primary {
-  background-color: $brand-1;
-  color: $font-dark;
-  border: 1px solid $brand-1;
+  background-color: $brand-1 !important;
+  color: $font-dark !important;
+  border: 1px solid $brand-1 !important;
 
   &:hover {
     transition: 0.125s;

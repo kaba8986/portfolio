@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import ProjectsJson from '../../assets/projects.json';
 import {ProjectComponent} from '../project/project.component';
 
@@ -11,6 +11,8 @@ interface PROJECT {
   image: string;
 }
 
+type PortfolioButton = 'all' | 'javascript' | 'angular';
+
 @Component({
   selector: 'ab-portfolio',
   templateUrl: './portfolio.component.html',
@@ -20,7 +22,7 @@ interface PROJECT {
 })
 export class PortfolioComponent {
   projects: PROJECT[] = ProjectsJson;
-  activeBtn: string = 'buttonAll';
+  selectedButton: PortfolioButton = 'all';
 
   filter(subject: string): void {
     this.resetFilter();
@@ -34,18 +36,18 @@ export class PortfolioComponent {
   }
 
   revertView(index: number): boolean {
-    return index%2 == 1;
+    return index % 2 == 1;
   }
 
   resetFilter(): void {
     this.projects = ProjectsJson;
   }
 
-  setActive(buttonName: string): void {
-    this.activeBtn = buttonName;
+  setActive(buttonName: PortfolioButton): void {
+    this.selectedButton = buttonName;
   }
 
-  isActive(buttonName: string): boolean {
-    return this.activeBtn == buttonName;
+  isActive(buttonName: PortfolioButton): boolean {
+    return this.selectedButton === buttonName;
   }
 }

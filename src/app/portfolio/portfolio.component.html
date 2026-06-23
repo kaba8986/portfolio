@@ -11,19 +11,19 @@
   <div class="project-container">
     <div class="filter-buttons">
       <button class="button-secondary"
-              [class.button-primary]="isActive('buttonAll')"
-              (click)="resetFilter(); setActive('buttonAll')">
+              [class.button-primary]="isActive('all')"
+              (click)="resetFilter(); setActive('all')">
         All
       </button>
       <button class="button-secondary"
-              [class.button-primary]="isActive('buttonJavaScript')"
-              (click)="filter('javascript'); setActive('buttonJavaScript')">
+              [class.button-primary]="isActive('javascript')"
+              (click)="filter('javascript'); setActive('javascript')">
         JavaScript
       </button>
       <button class="button-secondary"
-              [class.button-primary]="isActive('buttonAngular')"
+              [class.button-primary]="isActive('angular')"
               (click)="filter('angular');
-              setActive('buttonAngular')">
+              setActive('angular')">
         Angular
       </button>
     </div>
