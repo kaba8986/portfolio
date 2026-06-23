@@ -1,28 +1,18 @@
-import {Directive, HostListener, Input} from '@angular/core';
+import {Directive, HostListener, inject, input, Input} from '@angular/core';
 import {Router} from '@angular/router';
-
 
 @Directive({selector: '[abScrollTo]', standalone: true})
 export class ScrollToDirective {
-  @Input() target = '';
+  private readonly router = inject(Router);
+  target = input.required<string>();
 
   @HostListener('click')
   onClick() {
-
-    if (this.router.url !== '/') {
-      this.router.navigate(['/']);
-    }
+    if (this.router.url !== '/') this.router.navigate(['/']);
 
     setTimeout(() => {
-      const targetElement = document.querySelector(this.target);
+      const targetElement = document.querySelector(this.target());
       targetElement.scrollIntoView({behavior: 'smooth'});
     }, 100);
-
-
   }
-
-  constructor(public router: Router) {
-
-  }
-
 }

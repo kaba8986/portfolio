@@ -11,14 +11,9 @@ import {AbstractControl, NG_VALIDATORS, Validator} from '@angular/forms';
   standalone: true
 })
 
-
 export class InputValidatorDirective implements Validator {
-
   validate(control: AbstractControl): { [key: string]: any } | null {
-    if (control.value == '') {
-      return {'inputInvalid': true};
-    }
+    if (control.value == '') return {'inputInvalid': true};
     return null;
   }
-
 }
