@@ -9,7 +9,7 @@
   height: $header-height;
   padding: 0 $default-padding;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: $bg-1;
   z-index: 1000;
