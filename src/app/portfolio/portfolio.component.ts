@@ -36,7 +36,7 @@ export class PortfolioComponent {
   }
 
   revertView(index: number): boolean {
-    return index % 2 == 1;
+    return index % 2 === 1;
   }
 
   resetFilter(): void {

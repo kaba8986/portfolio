@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {Project} from 'src/models/project.class';
 
 @Component({
@@ -8,10 +8,8 @@ import {Project} from 'src/models/project.class';
   standalone: true
 })
 export class ProjectComponent {
-
-  @Input() reverse: boolean = false; //get boolean from portfolio component
-  @Input() currProject = new Project(); //get current Project from portfolio component
-
+  readonly reverse = input<boolean>(false);
+  readonly currProject = input<Project>(new Project());
 
   goToLive(project: Project) {
     window.open(project.live, '_blank')
@@ -20,5 +18,4 @@ export class ProjectComponent {
   goToGitHub(project: Project) {
     window.open(project.github, '_blank')
   }
-
 }
