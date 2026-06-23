@@ -1,22 +1,24 @@
 <div class="container">
   <div class="footer-line">
     <span id="copy">
-      © 2021 Andreas Burghardt
+      {{copyRight}}
     </span>
     <div class="social-box">
-      <a href="https://github.com/kaba8986" target="blank">
+      <a [href]="githubLink" target="blank">
         <img src="assets/img/ref_git.png" alt="">
       </a>
-      <a href="https://www.linkedin.com/in/andreas-burghardt-743563260/" target="blank">
+      <a [href]="linkedinLink" target="blank">
         <img src="assets/img/ref_in.png" alt="">
       </a>
-      <a href="https://www.xing.com/profile/Andreas_Burghardt21" target="blank">
+      <a [href]="xingLink" target="blank">
         <img src="assets/img/ref_xi.png" alt="">
       </a>
     </div>
   </div>
   <div class="link-box">
-    <a id="impress-link" routerLink="/impress">Imprint</a>
+    <a id="impress-link" routerLink="/impress">
+      Imprint
+    </a>
     <div class="underline"></div>
   </div>
 </div>
