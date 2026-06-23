@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import  ProjectsJson  from '../../assets/projects.json';
+import {Component, OnInit} from '@angular/core';
+import ProjectsJson from '../../assets/projects.json';
+import {ProjectComponent} from '../project/project.component';
 
 interface PROJECT {
   title: string;
@@ -11,10 +12,11 @@ interface PROJECT {
 }
 
 @Component({
-    selector: 'ab-portfolio',
-    templateUrl: './portfolio.component.html',
-    styleUrls: ['./portfolio.component.scss'],
-    standalone: false
+  selector: 'ab-portfolio',
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.scss'],
+  imports: [ProjectComponent],
+  standalone: true,
 })
 export class PortfolioComponent implements OnInit {
 
@@ -23,7 +25,7 @@ export class PortfolioComponent implements OnInit {
 
   constructor() {
 
-   }
+  }
 
   ngOnInit(): void {
 
@@ -33,7 +35,7 @@ export class PortfolioComponent implements OnInit {
     this.resetFilter();
     let filteredProjects = [];
     this.projects.forEach((proj) => {
-      if(proj.languages.toLowerCase().includes(subject)) {
+      if (proj.languages.toLowerCase().includes(subject)) {
         filteredProjects.push(proj);
       }
     })

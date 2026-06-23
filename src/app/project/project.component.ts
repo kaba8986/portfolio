@@ -1,12 +1,11 @@
-import { Input } from '@angular/core';
-import { Component } from '@angular/core';
-import { Project } from 'src/models/project.class';
+import {Component, Input} from '@angular/core';
+import {Project} from 'src/models/project.class';
 
 @Component({
-    selector: 'ab-project',
-    templateUrl: './project.component.html',
-    styleUrls: ['./project.component.scss'],
-    standalone: false
+  selector: 'ab-project',
+  templateUrl: './project.component.html',
+  styleUrls: ['./project.component.scss'],
+  standalone: true
 })
 export class ProjectComponent {
 
@@ -14,12 +13,12 @@ export class ProjectComponent {
   @Input() currProject = new Project(); //get current Project from portfolio component
 
 
-   goToLive(project: Project){
+  goToLive(project: Project) {
     window.open(project.live, '_blank')
-   }
+  }
 
-   goToGitHub(project: Project){
+  goToGitHub(project: Project) {
     window.open(project.github, '_blank')
-   }
+  }
 
 }

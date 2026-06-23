@@ -1,29 +1,22 @@
-
-import { Component, ElementRef, OnInit, ViewChild, DOCUMENT } from '@angular/core';
-
-
-
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 
 @Component({
-    selector: 'ab-about',
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.scss'],
-    standalone: false
+  selector: 'ab-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
+  standalone: true
 })
 export class AboutComponent implements OnInit {
   @ViewChild('section', {static: true}) section: ElementRef<HTMLDivElement>
 
 
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
 
   }
-
-
-
 
 
 }

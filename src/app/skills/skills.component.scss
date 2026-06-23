@@ -1,5 +1,5 @@
-@import '../../app/shared/styles/colors.scss';
-@import '../../app/shared/styles/utils.scss';
+@use '../../app/shared/styles/colors.scss' as *;
+@use '../../app/shared/styles/utils.scss' as *;
 
 .container {
   display: flex;
@@ -152,7 +152,7 @@ button {
     width: 100%;
     padding: 0 50px;
   }
-  
+
 
   .text-box {
     text-align: right;
@@ -183,12 +183,12 @@ button {
   }
 
   .img-box {
-  
+
     img {
       width: 45px;
       height: 45px;
     }
-  
+
     span {
       font-weight: 400;
       font-size: 14px;

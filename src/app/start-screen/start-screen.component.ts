@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-    selector: 'ab-start-screen',
-    templateUrl: './start-screen.component.html',
-    styleUrls: ['./start-screen.component.scss'],
-    standalone: false
+  selector: 'ab-start-screen',
+  templateUrl: './start-screen.component.html',
+  styleUrls: ['./start-screen.component.scss'],
+  standalone: true
 })
 export class StartScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

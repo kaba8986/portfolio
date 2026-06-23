@@ -1,5 +1,5 @@
-@import '../../app/shared/styles/colors.scss';
-@import '../../app/shared/styles/utils.scss';
+@use '../../app/shared/styles/colors.scss' as *;
+@use '../../app/shared/styles/utils.scss' as *;
 
 .menu {
   position: fixed;
@@ -171,7 +171,7 @@
     margin-top: 0;
   }
 
-  
+
 }
 
 @media (max-width: 940px) {

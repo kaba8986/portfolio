@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 
 @Component({
-    selector: 'ab-form',
-    templateUrl: './form.component.html',
-    styleUrls: ['./form.component.scss'],
-    standalone: false
+  selector: 'ab-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss'],
+  standalone: true,
 })
 export class FormComponent implements OnInit {
 
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

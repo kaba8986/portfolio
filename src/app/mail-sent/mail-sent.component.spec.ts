@@ -8,8 +8,8 @@ describe('MailSentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MailSentComponent ]
-    })
+    imports: [MailSentComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(MailSentComponent);

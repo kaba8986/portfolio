@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-    selector: 'ab-skills',
-    templateUrl: './skills.component.html',
-    styleUrls: ['./skills.component.scss'],
-    standalone: false
+  selector: 'ab-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss'],
+  standalone: true
 })
 export class SkillsComponent implements OnInit {
 
   icons = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'Firebase', 'GIT', 'CSS', 'REST-API', 'Scrum', 'Material Design'];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

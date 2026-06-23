@@ -1,12 +1,15 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FormGroup, FormControl} from '@angular/forms';
-import { Router } from '@angular/router';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {Router} from '@angular/router';
+import {InputValidatorDirective} from '../directives/input-validator.directive';
+import {ScrollToDirective} from '../directives/scroll-to.directive';
 
 @Component({
-    selector: 'ab-contact',
-    templateUrl: './contact.component.html',
-    styleUrls: ['./contact.component.scss'],
-    standalone: false
+  selector: 'ab-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss'],
+  imports: [FormsModule, InputValidatorDirective, ScrollToDirective],
+  standalone: true,
 })
 export class ContactComponent implements OnInit {
 
@@ -27,7 +30,7 @@ export class ContactComponent implements OnInit {
 
   constructor(public router: Router) {
 
-   }
+  }
 
   ngOnInit(): void {
   }
@@ -41,7 +44,7 @@ export class ContactComponent implements OnInit {
   }
 
   async sendMail() {
-      //"https://andreas-burghardt.developerakademie.net/send_mail/send_mail.php"
+    //"https://andreas-burghardt.developerakademie.net/send_mail/send_mail.php"
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -61,11 +64,11 @@ export class ContactComponent implements OnInit {
 
     //send
     await fetch("https://andreas-burghardt.de/send_mail/send_mail.php",
-    {
-      method: 'POST',
-      body: fd
-    })
- 
+      {
+        method: 'POST',
+        body: fd
+      })
+
 
     this.router.navigate(['/success']);
 

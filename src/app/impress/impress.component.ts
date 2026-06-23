@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-    selector: 'ab-impress',
-    templateUrl: './impress.component.html',
-    styleUrls: ['./impress.component.scss'],
-    standalone: false
+  selector: 'ab-impress',
+  templateUrl: './impress.component.html',
+  styleUrls: ['./impress.component.scss'],
+  standalone: true
 })
 export class ImpressComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

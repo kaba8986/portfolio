@@ -1,29 +1,32 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
-
-
+import {Component, HostListener, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {ScrollToDirective} from '../directives/scroll-to.directive';
 
 @Component({
-    selector: 'ab-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss'],
-    standalone: false
+  selector: 'ab-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
+  imports: [ScrollToDirective],
+  standalone: true,
 })
 export class HeaderComponent implements OnInit {
 
 
   marker: string = 'home';
   open: boolean = false;
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if(this.open && window.innerWidth > 720) {
+    if (this.open && window.innerWidth > 720) {
       this.toggleMenu();
     }
   }
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   scrollTo(anchor: string) {
     this.marker = anchor;
