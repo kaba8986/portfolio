@@ -1,5 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ab-about',
@@ -7,16 +6,4 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
   styleUrls: ['./about.component.scss'],
   standalone: true
 })
-export class AboutComponent implements OnInit {
-  @ViewChild('section', {static: true}) section: ElementRef<HTMLDivElement>
-
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-
-  }
-
-
-}
+export class AboutComponent {}
