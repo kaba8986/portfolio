@@ -1,3 +1,5 @@
+@use '../../app/shared/styles/colors.scss' as *;
+
 .container {
   position: relative;
   display: flex;
@@ -30,13 +32,13 @@
 
 .dev-box {
   align-items: flex-end;
-  background-color: #141D2F;
+  background-color: $bg-1;
 
 
   a {
     padding: 20px 40px;
-    background-color: #00BEE8;
-    color: #fff;
+    background-color: $brand-1;
+    color: $font-light;
     border-radius: 10px;
     border: 3px solid transparent;
     transition: 0.25s;
@@ -46,7 +48,8 @@
     &:hover {
       transform: scale(1.05);
       transition: 0.25s;
-      background-color: #4B47FF;
+      color: $font-dark;
+      background-color: $brand-2;
     }
   }
 }
@@ -55,7 +58,7 @@
   align-items: flex-start;
   background-color: #FFFCF3;
 
-  a {      
+  a {
     padding: 20px 40px;
     background-color: #FFFCF3;
     color: #000;
@@ -92,7 +95,7 @@
 
 @media (max-width: 400px) {
   .container {
-    
+
     a {
       font-size: 23px;
     }

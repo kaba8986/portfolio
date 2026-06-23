@@ -54,12 +54,14 @@ p {
 
 .button-primary {
   background-color: $brand-1 !important;
-  color: $font-dark !important;
+  color: $font-light !important;
   border: 1px solid $brand-1 !important;
 
   &:hover {
     transition: 0.125s;
-    background-color: $brand-2;
+    color: $font-dark !important;
+    background-color: $brand-2 !important;
+    border: 1px solid $brand-2 !important;
   }
 }
 

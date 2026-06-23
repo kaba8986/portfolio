@@ -7,11 +7,13 @@
   padding: 0 $default-padding;
   gap: 40px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
   font-size: 4.25rem;
-  line-height: 5rem;
+  line-height: 4.5rem;
   font-weight: 400;
 }
 
@@ -50,6 +52,11 @@ h1, h2, p {
   }
 }
 
+.code-style {
+  font-family: monospace;
+  font-size: 1.25rem;
+}
+
 
 @media (max-width: 1560px) {
   .container {
@@ -75,22 +82,22 @@ h1, h2, p {
 @media (max-width: 1100px) {
   .container {
     flex-direction: column;
-    padding: 130px 120px;
-    gap: 0px;
+    padding: 0 120px;
+    gap: 0;
   }
 }
 
 @media (max-width: 1020px) {
   .container {
     flex-direction: column;
-    padding: 130px 100px;
+    padding: 0 100px;
     gap: 0px;
   }
 }
 
 @media (max-width: 940px) {
   .container {
-    padding: 130px 80px;
+    padding: 0 80px;
   }
 }
 
@@ -117,7 +124,7 @@ h1, h2, p {
 
 @media (max-width: 720px) {
   .container {
-    padding: 300px 40px 130px;
+    padding: 0 40px 130px;
     min-height: auto;
   }
 }
@@ -155,18 +162,9 @@ h1, h2, p {
 
 @media (max-width: 600px) {
   .container {
-    padding: 300px 25px 130px 25px;
+    padding: 0 25px 130px 25px;
   }
 }
-
-@media (max-width: 520px) {
-
-}
-
-@media (max-width: 476px) {
-
-}
-
 
 @media (max-width: 380px) {
   .container {

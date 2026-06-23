@@ -7,6 +7,8 @@ import {Component} from '@angular/core';
   standalone: true
 })
 export class StartScreenComponent {
+  readonly devUrl = 'https://www.andreas-burghardt.de';
+  readonly musicianUrl = 'https://www.andreasburghardtmusic.com';
 
   goToWebsite(site: string) {
     window.location.href = site;
