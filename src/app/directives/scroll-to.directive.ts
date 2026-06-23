@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 
 
 @Directive({
-  selector: '[abScrollTo]'
+    selector: '[abScrollTo]',
+    standalone: false
 })
 export class ScrollToDirective {
   @Input() target = '';

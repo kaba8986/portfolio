@@ -4,9 +4,10 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'ab-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'ab-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
 

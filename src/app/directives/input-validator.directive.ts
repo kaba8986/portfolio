@@ -2,12 +2,13 @@ import { Directive } from '@angular/core';
 import { AbstractControl, Validator, NG_VALIDATORS, ValidationErrors } from '@angular/forms';
 
 @Directive({
-  selector: '[abInputValidator]',
-  providers: [{
-    provide: NG_VALIDATORS,
-    useExisting: InputValidatorDirective,
-    multi: true
-  }]
+    selector: '[abInputValidator]',
+    providers: [{
+            provide: NG_VALIDATORS,
+            useExisting: InputValidatorDirective,
+            multi: true
+        }],
+    standalone: false
 })
 
 

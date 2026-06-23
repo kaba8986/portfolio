@@ -11,9 +11,10 @@ interface PROJECT {
 }
 
 @Component({
-  selector: 'ab-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+    selector: 'ab-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.scss'],
+    standalone: false
 })
 export class PortfolioComponent implements OnInit {
 

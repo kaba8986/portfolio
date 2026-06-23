@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ab-start-screen',
-  templateUrl: './start-screen.component.html',
-  styleUrls: ['./start-screen.component.scss']
+    selector: 'ab-start-screen',
+    templateUrl: './start-screen.component.html',
+    styleUrls: ['./start-screen.component.scss'],
+    standalone: false
 })
 export class StartScreenComponent implements OnInit {
 

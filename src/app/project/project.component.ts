@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 import { Project } from 'src/models/project.class';
 
 @Component({
-  selector: 'ab-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+    selector: 'ab-project',
+    templateUrl: './project.component.html',
+    styleUrls: ['./project.component.scss'],
+    standalone: false
 })
 export class ProjectComponent {
 
