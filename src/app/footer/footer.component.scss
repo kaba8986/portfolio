@@ -41,10 +41,8 @@
 }
 
 .link-box:hover .underline {
-width: 60px;
+  width: 60px;
 }
-
-
 
 .underline {
   height: 2px;
@@ -79,13 +77,11 @@ width: 60px;
   }
 }
 
-
 @media (max-width: 1500px) {
   .container {
     padding: 60px 120px;
   }
 }
-
 
 @media (max-width: 1020px) {
   .container {
@@ -118,7 +114,6 @@ width: 60px;
     margin-bottom: 28px;
   }
 }
-
 
 @media (max-width: 720px) {
   .container {
