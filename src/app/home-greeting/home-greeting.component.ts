@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {ScrollToDirective} from '../directives/scroll-to.directive';
 
 @Component({
@@ -8,12 +8,5 @@ import {ScrollToDirective} from '../directives/scroll-to.directive';
   imports: [ScrollToDirective],
   standalone: true
 })
-export class HomeGreetingComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+export class HomeGreetingComponent {
 }
