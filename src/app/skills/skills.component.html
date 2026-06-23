@@ -1,18 +1,31 @@
 <div class="container">
-  <button id="mobile-button">Get in touch</button>
+  <button id="mobile-button"
+          class="button-primary"
+          abScrollTo
+          target="#contact">
+    Get in touch
+  </button>
   <div class="icon-container" data-aos="zoom-in">
     @for (icon of icons; track icon) {
       <div class="img-box">
-        <img src="assets/img/skills/{{ icon }}.png" alt="">
+        <img src="assets/img/skills/{{ icon }}.png" [alt]="`Icon for skill ${icon}.`">
         <span>{{ icon }}</span>
       </div>
     }
   </div>
   <div class="right-container">
     <div class="text-box">
-      <h1 data-aos="fade-left">My skills</h1>
+      <h1 data-aos="fade-left">
+        My skills
+      </h1>
       <p>I have grown my frontend developments skills that have allowed me to create different real projects.</p>
-      <button id="desktop-button" class="button-primary" data-aos="fade-up">Get in touch</button>
+      <button id="desktop-button"
+              class="button-primary"
+              abScrollTo
+              target="#contact"
+              data-aos="fade-up">
+        Get in touch
+      </button>
     </div>
     <div class="line" data-aos="fade-left"></div>
   </div>

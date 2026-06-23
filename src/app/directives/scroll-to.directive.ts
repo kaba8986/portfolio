@@ -1,4 +1,4 @@
-import {Directive, HostListener, inject, input, Input} from '@angular/core';
+import {Directive, HostListener, inject, input} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Directive({selector: '[abScrollTo]', standalone: true})
