@@ -79,13 +79,14 @@
           Send message
         </button>
       </form>
-      <img class="to-top"
-           (mouseenter)="onMouseEnter()"
-           (mouseleave)="onMouseOut()"
-           [src]="goToTopImageUrl" alt="Go to top."
+      <svg lucideCircleArrowUp
+           class="to-top"
+           size="60"
+           strokeWidth="1"
            abScrollTo
            target="#home"
            data-aos="fade-left">
+      </svg>
     </div>
   </div>
 </div>

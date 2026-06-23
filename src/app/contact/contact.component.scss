@@ -89,6 +89,10 @@ textarea {
   right: 0;
   bottom: 0;
   cursor: pointer;
+
+  &:hover {
+    color: $brand-1;
+  }
 }
 
 .invalid-feedback {

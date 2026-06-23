@@ -1,18 +1,18 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Router} from '@angular/router';
 import {InputValidatorDirective} from '../directives/input-validator.directive';
 import {ScrollToDirective} from '../directives/scroll-to.directive';
+import {LucideCircleArrowUp} from "@lucide/angular";
 
 @Component({
   selector: 'ab-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [FormsModule, InputValidatorDirective, ScrollToDirective],
+  imports: [FormsModule, InputValidatorDirective, ScrollToDirective, LucideCircleArrowUp],
   standalone: true,
 })
 export class ContactComponent {
-  goToTopImageUrl = '../../assets/img/to-top.png';
   name = '';
   email = '';
   message = '';
@@ -23,14 +23,7 @@ export class ContactComponent {
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('sendButton') sendButton: ElementRef;
 
-  constructor(public router: Router) {}
-
-  onMouseEnter() {
-    this.goToTopImageUrl = '../../assets/img/to-top-hover.png'
-  }
-
-  onMouseOut() {
-    this.goToTopImageUrl = '../../assets/img/to-top.png'
+  constructor(public router: Router) {
   }
 
   async sendMail() {
