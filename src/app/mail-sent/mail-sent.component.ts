@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 @Component({
@@ -8,12 +8,5 @@ import {RouterLink} from '@angular/router';
   imports: [RouterLink],
   standalone: true
 })
-export class MailSentComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+export class MailSentComponent {
 }

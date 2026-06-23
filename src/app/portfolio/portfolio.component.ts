@@ -18,23 +18,14 @@ interface PROJECT {
   imports: [ProjectComponent],
   standalone: true,
 })
-export class PortfolioComponent implements OnInit {
-
+export class PortfolioComponent {
   projects: PROJECT[] = ProjectsJson;
-  activeBtn: string = 'btn1';
+  activeBtn: string = 'buttonAll';
 
-  constructor() {
-
-  }
-
-  ngOnInit(): void {
-
-  }
-
-  filter(subject) {
+  filter(subject: string): void {
     this.resetFilter();
     let filteredProjects = [];
-    this.projects.forEach((proj) => {
+    this.projects.forEach((proj: PROJECT) => {
       if (proj.languages.toLowerCase().includes(subject)) {
         filteredProjects.push(proj);
       }
@@ -42,16 +33,19 @@ export class PortfolioComponent implements OnInit {
     this.projects = filteredProjects;
   }
 
-  resetFilter() {
+  revertView(index: number): boolean {
+    return index%2 == 1;
+  }
+
+  resetFilter(): void {
     this.projects = ProjectsJson;
   }
 
-  setActive(btn) {
-    this.activeBtn = btn;
+  setActive(buttonName: string): void {
+    this.activeBtn = buttonName;
   }
 
-  isActive(btn) {
-    return this.activeBtn == btn;
+  isActive(buttonName: string): boolean {
+    return this.activeBtn == buttonName;
   }
-
 }

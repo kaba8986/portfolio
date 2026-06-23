@@ -1,6 +1,5 @@
 <div class="container">
   <div class="portfolio-text">
-
     <div class="line1" data-aos="fade-left"></div>
     <div class="text-box">
       <h1 data-aos="fade-left">Portfolio</h1>
@@ -8,16 +7,30 @@
       <div class="line3" data-aos="fade-left"></div>
     </div>
     <div class="line2" data-aos="fade-left"></div>
-
   </div>
   <div class="project-container">
     <div class="filter-buttons">
-      <button class="button-secondary " [class.button-primary]="isActive('btn1')" (click)="resetFilter(); setActive('btn1')">All</button>
-      <button class="button-secondary" [class.button-primary]="isActive('btn2')" (click)="filter('javascript'); setActive('btn2')">JavaScript</button>
-      <button class="button-secondary" [class.button-primary]="isActive('btn3')" (click)="filter('angular'); setActive('btn3')">Angular</button>
+      <button class="button-secondary"
+              [class.button-primary]="isActive('buttonAll')"
+              (click)="resetFilter(); setActive('buttonAll')">
+        All
+      </button>
+      <button class="button-secondary"
+              [class.button-primary]="isActive('buttonJavaScript')"
+              (click)="filter('javascript'); setActive('buttonJavaScript')">
+        JavaScript
+      </button>
+      <button class="button-secondary"
+              [class.button-primary]="isActive('buttonAngular')"
+              (click)="filter('angular');
+              setActive('buttonAngular')">
+        Angular
+      </button>
     </div>
     @for (project of projects; track project; let i = $index) {
-      <ab-project [reverse]="i%2 == 1" [currProject]="project"></ab-project>
+      <ab-project [reverse]="revertView(i)"
+                  [currProject]="project">
+      </ab-project>
     }
   </div>
 </div>
