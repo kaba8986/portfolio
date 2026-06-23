@@ -1,10 +1,12 @@
 <div class="container">
   <button id="mobile-button">Get in touch</button>
   <div class="icon-container" data-aos="zoom-in">
-    <div class="img-box" *ngFor="let icon of icons">
-      <img src="assets/img/skills/{{ icon }}.png" alt="">
-      <span>{{ icon }}</span>
-    </div>
+    @for (icon of icons; track icon) {
+      <div class="img-box">
+        <img src="assets/img/skills/{{ icon }}.png" alt="">
+        <span>{{ icon }}</span>
+      </div>
+    }
   </div>
   <div class="right-container">
     <div class="text-box">

@@ -4,7 +4,7 @@
     <div class="text-box">
       <h2>Got a problem to solve?</h2>
       <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
-        projects with my work.</p><br>
+      projects with my work.</p><br>
       <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
     <div class="form-box">
@@ -16,51 +16,63 @@
             #nameNgModel="ngModel" abInputValidator
             [class.is-invalid]="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid" required
             #nameField>
-          <span class="invalid-feedback"
-            *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid">
-            Name is required.
-          </span>
-          <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
-            *ngIf="(nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid">
+            @if ((nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid) {
+              <span class="invalid-feedback"
+                >
+                Name is required.
+              </span>
+            }
+            @if ((nameNgModel.touched || nameNgModel.dirty) && nameNgModel.errors?.inputInvalid) {
+              <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
+                >
+            }
+          </div>
+          <div class="form-group">
+
+            <!-- Input Mail -->
+
+            <input type="email" class="form-control" name="email" placeholder="Your email" [(ngModel)]="email"
+              #emailNgModel="ngModel" abInputValidator
+              [class.is-invalid]="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid"
+              required required #emailField>
+              @if ((emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid) {
+                <span class="invalid-feedback"
+                  >
+                  Valid email is required.
+                </span>
+              }
+              @if ((emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid) {
+                <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
+                  >
+              }
+
+              <!-- Input Message -->
+
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message"
+                #messageNgModel="ngModel" abInputValidator
+                [class.is-invalid]="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid"
+              required #messageField></textarea>
+              @if ((messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid) {
+                <span class="invalid-feedback"
+                  >
+                  Message is empty.
+                </span>
+              }
+              @if ((messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid) {
+                <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
+                  >
+              }
+            </div>
+
+            <!-- Send Button -->
+
+            <button class="button-primary" type="submit" #sendButton data-aos="fade-up">Send message</button>
+
+          </form>
+          <img class="to-top" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseOut()" [src]="url" alt="" abScrollTo
+            target="#home" data-aos="fade-left">
+          </div>
         </div>
-        <div class="form-group">
-
-          <!-- Input Mail -->
-
-          <input type="email" class="form-control" name="email" placeholder="Your email" [(ngModel)]="email"
-            #emailNgModel="ngModel" abInputValidator
-            [class.is-invalid]="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid"
-            required required #emailField>
-          <span class="invalid-feedback"
-            *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
-            Valid email is required.
-          </span>
-          <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
-            *ngIf="(emailNgModel.touched || emailNgModel.dirty) && emailNgModel.errors?.inputInvalid">
-
-          <!-- Input Message -->
-
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message"
-            #messageNgModel="ngModel" abInputValidator
-            [class.is-invalid]="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid"
-            required #messageField></textarea>
-          <span class="invalid-feedback"
-            *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
-            Message is empty.
-          </span>
-          <img src="../../assets/img/alert.png" alt="" class="invalid-icon"
-            *ngIf="(messageNgModel.touched || messageNgModel.dirty) && messageNgModel.errors?.inputInvalid">
-        </div>
-
-        <!-- Send Button -->
-
-        <button class="button-primary" type="submit" #sendButton data-aos="fade-up">Send message</button>
-
-      </form>
-      <img class="to-top" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseOut()" [src]="url" alt="" abScrollTo
-        target="#home" data-aos="fade-left">
-    </div>
-  </div>
-</div>
+      </div>

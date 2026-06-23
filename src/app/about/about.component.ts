@@ -1,5 +1,5 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+
+import { Component, ElementRef, OnInit, ViewChild, DOCUMENT } from '@angular/core';
 
 
 

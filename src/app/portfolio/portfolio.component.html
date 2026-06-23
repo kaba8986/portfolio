@@ -1,13 +1,13 @@
 <div class="container">
   <div class="portfolio-text">
 
-      <div class="line1" data-aos="fade-left"></div>
-      <div class="text-box">
-        <h1 data-aos="fade-left">Portfolio</h1>
-        <p>This page is a sample of my work - please feel free to try them out.</p>
-        <div class="line3" data-aos="fade-left"></div>
-      </div>
-      <div class="line2" data-aos="fade-left"></div>
+    <div class="line1" data-aos="fade-left"></div>
+    <div class="text-box">
+      <h1 data-aos="fade-left">Portfolio</h1>
+      <p>This page is a sample of my work - please feel free to try them out.</p>
+      <div class="line3" data-aos="fade-left"></div>
+    </div>
+    <div class="line2" data-aos="fade-left"></div>
 
   </div>
   <div class="project-container">
@@ -16,6 +16,8 @@
       <button class="button-secondary" [class.button-primary]="isActive('btn2')" (click)="filter('javascript'); setActive('btn2')">JavaScript</button>
       <button class="button-secondary" [class.button-primary]="isActive('btn3')" (click)="filter('angular'); setActive('btn3')">Angular</button>
     </div>
-    <ab-project *ngFor="let project of projects; let i = index;" [reverse]="i%2 == 1" [currProject]="project"></ab-project>
+    @for (project of projects; track project; let i = $index) {
+      <ab-project [reverse]="i%2 == 1" [currProject]="project"></ab-project>
+    }
   </div>
 </div>
