@@ -50,7 +50,6 @@ form {
   position: relative;
 }
 
-
 input[type="text"], input[type="email"] {
   height: 50px;
   width: 100%;
@@ -74,7 +73,6 @@ input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
   border: 1px solid #70E61C !important;
 }
 
-
 textarea {
   width: 100%;
   padding: 15px 25px;
@@ -86,11 +84,10 @@ textarea {
   outline: none;
 }
 
-
 .to-top {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   cursor: pointer;
 }
 
@@ -122,14 +119,12 @@ textarea {
   }
 }
 
-
 @media (max-width: 1020px) {
   .container {
     padding: 130px 100px 100px;
     min-height: auto;
   }
 }
-
 
 @media (max-width: 940px) {
   .container {
@@ -144,7 +139,6 @@ textarea {
     padding: 15px 24px;
   }
 }
-
 
 @media (max-width: 720px) {
   .container {
