@@ -1,5 +1,5 @@
-@import '../../app/shared/styles/colors.scss';
-@import '../../app/shared/styles/utils.scss';
+@use '../../app/shared/styles/colors.scss' as *;
+@use '../../app/shared/styles/utils.scss' as *;
 
 .container {
   width: 100%;
@@ -45,7 +45,7 @@ h1, h2, p {
     cursor: pointer;
 
     &:hover {
-      opacity: 0.6; 
+      opacity: 0.6;
     }
   }
 }

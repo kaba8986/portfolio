@@ -1,5 +1,5 @@
-@import '../../app/shared/styles/colors.scss';
-@import '../../app/shared/styles/utils.scss';
+@use '../../app/shared/styles/colors.scss' as *;
+@use '../../app/shared/styles/utils.scss' as *;
 
 .container {
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   padding: 0 200px;
-} 
+}
 
 img {
   width: 500px;
@@ -113,7 +113,7 @@ h4 {
     width: 320px;
     padding-right: 25px;
   }
-  
+
   .description {
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ h4 {
   .img-reverse {
     padding-left: 25px;
   }
-  
+
   .desc-reverse {
     padding-right: 25px;
     text-align: right;
@@ -183,7 +183,7 @@ h4 {
     justify-content: center;
     gap: 80px;
   }
-  
+
 }
 
 @media (max-width: 720px) {

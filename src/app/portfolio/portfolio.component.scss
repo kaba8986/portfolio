@@ -1,5 +1,5 @@
-@import '../../app/shared/styles/colors.scss';
-@import '../../app/shared/styles/utils.scss';
+@use '../../app/shared/styles/colors.scss' as *;
+@use '../../app/shared/styles/utils.scss' as *;
 
 .container {
   display: flex;
