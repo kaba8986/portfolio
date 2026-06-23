@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {NgStyle} from '@angular/common';
 import {ScrollToDirective} from '../directives/scroll-to.directive';
 
@@ -9,9 +9,9 @@ import {ScrollToDirective} from '../directives/scroll-to.directive';
   imports: [NgStyle, ScrollToDirective],
   standalone: true
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   opacVal = 1;
-  x = window.matchMedia("(max-width: 1100px)");
+  private readonly x = window.matchMedia("(max-width: 1100px)");
 
   constructor() {
     window.addEventListener('scroll', () => {
@@ -24,8 +24,4 @@ export class HomeComponent implements OnInit {
       this.opacVal = value;
     })
   }
-
-  ngOnInit(): void {
-  }
-
 }
