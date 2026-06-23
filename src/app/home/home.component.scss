@@ -4,10 +4,11 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 0 $default-padding;
+  padding: 0 3rem;
   gap: 40px;
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -31,11 +32,6 @@ h1, h2, p {
   padding-left:  1.5rem;
 }
 
-.greeting-tile {
-  margin-top: $header-height;
-  padding: 2rem;
-}
-
 .contact {
   display: flex;
   align-items: center;
@@ -55,119 +51,4 @@ h1, h2, p {
 .code-style {
   font-family: monospace;
   font-size: 1.25rem;
-}
-
-
-@media (max-width: 1560px) {
-  .container {
-    padding: 0 120px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .container {
-    padding: 0 120px;
-  }
-}
-
-
-@media (max-width: 1240px) {
-  .container {
-    padding: 0 120px;
-  }
-
-}
-
-
-@media (max-width: 1100px) {
-  .container {
-    flex-direction: column;
-    padding: 0 120px;
-    gap: 0;
-  }
-}
-
-@media (max-width: 1020px) {
-  .container {
-    flex-direction: column;
-    padding: 0 100px;
-    gap: 0px;
-  }
-}
-
-@media (max-width: 940px) {
-  .container {
-    padding: 0 80px;
-  }
-}
-
-@media (max-width: 860px) {
-  #rot {
-    font-size: 90px;
-    bottom: 89px;
-  }
-
-  #prof {
-    font-size: 46px;
-  }
-
-  #name {
-    font-size: 86px;
-  }
-}
-
-@media (max-width: 800px) {
-  #mail {
-    display: none;
-  }
-}
-
-@media (max-width: 720px) {
-  .container {
-    padding: 0 40px 130px;
-    min-height: auto;
-  }
-}
-
-
-
-@media (max-width: 670px) {
-
-  .greeting {
-    max-width: auto;
-    min-width: auto;
-  }
-
-  #name {
-    font-size: 66px;
-    line-height: 80px;
-    padding-left: 72px;
-  }
-
-  #rot {
-    font-size: 68px;
-    bottom: 79px;
-    left: 70px;
-  }
-
-  #prof {
-    font-size: 42px;
-    text-shadow: 2px 2px 3px rgba($color: rgb(0, 0, 0), $alpha: 0.6);
-  }
-
-  .references {
-    gap: 25px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 0 25px 130px 25px;
-  }
-}
-
-@media (max-width: 380px) {
-  .container {
-    padding-bottom: 180px;
-  }
 }
