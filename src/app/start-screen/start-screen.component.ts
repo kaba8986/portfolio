@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ab-start-screen',
@@ -6,13 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./start-screen.component.scss'],
   standalone: true
 })
-export class StartScreenComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
+export class StartScreenComponent {
 
   goToWebsite(site: string) {
     window.location.href = site;

@@ -1,8 +1,8 @@
-@if (this.router.url != '/start') {
+@if (showHeaderOrFooter()) {
   <ab-header></ab-header>
 }
 <router-outlet></router-outlet>
-@if (this.router.url != '/start') {
+@if (showHeaderOrFooter()) {
   <ab-footer></ab-footer>
 }
 
